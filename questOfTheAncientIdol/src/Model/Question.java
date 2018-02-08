@@ -63,9 +63,9 @@ public class Question implements Serializable{
         if (!Objects.equals(this.question, other.question)) {
             return false;
         }
-        if (!Objects.equals(this.answer, other.answer)) {
-            return false;
-        }
+        //if (!Objects.equals(this.answer, other.answer)) {
+        //    return false;
+        //}
         return true;
     }
 }
