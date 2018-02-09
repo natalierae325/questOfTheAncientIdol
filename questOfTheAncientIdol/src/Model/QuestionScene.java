@@ -7,19 +7,21 @@ package Model;
 
 import java.io.Serializable;
 import java.util.Objects;
-
-public class InventoryList implements Serializable{
-        private String inventoryType;
-
+/**
+ *
+ * @author natal
+ */
+public class QuestionScene implements Serializable{
+  private String answer;
     @Override
     public String toString() {
-        return "InventoryList{" + "inventoryType=" + inventoryType + '}';
+        return "QuestionScene{" + "answer=" + answer + '}';
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 43 * hash + Objects.hashCode(this.inventoryType);
+        int hash = 3;
+        hash = 67 * hash + Objects.hashCode(this.answer);
         return hash;
     }
 
@@ -34,29 +36,25 @@ public class InventoryList implements Serializable{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final InventoryList other = (InventoryList) obj;
-        if (!Objects.equals(this.inventoryType, other.inventoryType)) {
+        final QuestionScene other = (QuestionScene) obj;
+        if (!Objects.equals(this.answer, other.answer)) {
             return false;
         }
         return true;
     }
-
-    public String getInventoryType() {
-        return inventoryType;
-    }
-
-    public void setInventoryType(String inventoryType) {
-        this.inventoryType = inventoryType;
-    }
-
-    public InventoryList(String inventoryType) {
-        this.inventoryType = inventoryType;
-    }
     
 
-        
+    public QuestionScene(String answer) {
+        this.answer = answer;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
     
     
-
-    
+}
