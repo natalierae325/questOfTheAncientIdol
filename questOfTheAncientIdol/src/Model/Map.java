@@ -60,49 +60,49 @@ public class Map implements Serializable{
         }
         return true;
     }
-    public string rowCount;
-    public string columnCount;
-    public string currentRown;
-    public string currentColumn;
-    public string description;
+    public String rowCount;
+    public String columnCount;
+    public String currentRown;
+    public String currentColumn;
+    public String description;
 
-    public string getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(string description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public string getRowCount() {
+    public String getRowCount() {
         return rowCount;
     }
 
-    public void setRowCount(string rowCount) {
+    public void setRowCount(String rowCount) {
         this.rowCount = rowCount;
     }
 
-    public string getColumnCount() {
+    public String getColumnCount() {
         return columnCount;
     }
 
-    public void setColumnCount(string columnCount) {
+    public void setColumnCount(String columnCount) {
         this.columnCount = columnCount;
     }
 
-    public string getCurrentRown() {
+    public String getCurrentRown() {
         return currentRown;
     }
 
-    public void setCurrentRown(string currentRown) {
+    public void setCurrentRown(String currentRown) {
         this.currentRown = currentRown;
     }
 
-    public string getCurrentColumn() {
+    public String getCurrentColumn() {
         return currentColumn;
     }
 
-    public void setCurrentColumn(string currentColumn) {
+    public void setCurrentColumn(String currentColumn) {
         this.currentColumn = currentColumn;
     }
     
