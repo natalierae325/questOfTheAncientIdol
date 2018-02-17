@@ -64,7 +64,8 @@ public class BoulderControlTest {
         
         System.out.println("\tTest Case 1");
         double boulderSlopeDistance = 25;
-        double slopeDistance = 25;
+        double expResult = 25;
+        double slopeDistance = 0;
         double result = BoulderControl.calcBoulderSlopeDistance(boulderSlopeDistance, slopeDistance);
         assertEquals(expResult, result, 0.0);
      }
