@@ -20,10 +20,13 @@ public class boulder {
         double boulderVolume;
         
         System.out.println("Enter the diamater of the boulder:");
-boulderRadius = (user input / 2.0);
-boulderVolume = ( 4.0 / 3.0 ) * Math.PI * Math.pow( boulderRadius, 3 );
-System.out.println("Volume = " + boulderVolume);
-      return;
-   
-}
+        boulderRadius = (user input / 2.0);
+        boulderVolume = ( 4.0 / 3.0 ) * Math.PI * Math.pow( boulderRadius, 3 );
+        System.out.println("Volume = " + boulderVolume);
+        return;
+    }
+    
+    
+    
+    public static double calcBoulderSlopeDistance(double )
 }
