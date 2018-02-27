@@ -67,7 +67,7 @@ public class Location implements Serializable{
     public String getColumn() {
         return column;
     }
-
+ 
     public void setColumn(String column) {
         this.column = column;
     }

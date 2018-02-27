@@ -7,7 +7,7 @@ package Model;
 
 import java.io.Serializable;
 
-/**
+/**io.Serializable;
  *
  * @author natal
  */
