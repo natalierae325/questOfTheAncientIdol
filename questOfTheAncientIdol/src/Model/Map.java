@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -15,6 +15,9 @@ import java.util.Objects;
 
 public class Map implements Serializable{
 
+    
+    
+    
     @Override
     public String toString() {
         return "Map{" + "rowCount=" + rowCount + ", columnCount=" + columnCount + ", currentRown=" + currentRown + ", currentColumn=" + currentColumn + ", description=" + description + '}';
