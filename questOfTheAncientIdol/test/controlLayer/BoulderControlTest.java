@@ -59,6 +59,7 @@ public class BoulderControlTest {
     
     
     
+    @Test
     public void testCalcBoulderSlopeDistance(){
         System.out.println("calcBoulderSlopeDistance");
         
@@ -98,4 +99,45 @@ public class BoulderControlTest {
         assertEquals(expResult, result, 0.0); 
         
      }
+    
+    
+    @Test
+    public void testCalcUserSpeed() {
+            System.out.println("calcUserSpeed");
+            
+            System.out.println("\tTest Case 1");
+            double userTimeInput = 5;
+            double expResult = 5;
+            double userSpeed = 3.8;
+            double result = BoulderControl.calcUserSpeed(userTimeInput, userSpeed);
+            assertEquals(expResult, result, 0.0);
+            
+            System.out.println("\tTest Case 2");
+            userTimeInput = 0;
+            expResult = 0;
+            userSpeed = -1;
+            result = BoulderControl.calcUserSpeed(userTimeInput, userSpeed);
+            assertEquals(expResult, result, 0.0);
+            
+            System.out.println("\tTest Case 3");
+            userTimeInput = 20;
+            expResult = 20;
+            userSpeed = -1;
+            result = BoulderControl.calcUserSpeed(userTimeInput, userSpeed);
+            assertEquals(expResult, result, 0.0);
+            
+            System.out.println("\tTest Case 4");
+            userTimeInput = 1;
+            expResult = 1;
+            userSpeed = 19;
+            result = BoulderControl.calcUserSpeed(userTimeInput, userSpeed);
+            assertEquals(expResult, result, 0.0);
+            
+            System.out.println("\tTest Case 5");
+            userTimeInput = 19;
+            expResult = 19;
+            userSpeed = 1;
+            result = BoulderControl.calcUserSpeed(userTimeInput, userSpeed);
+            assertEquals(expResult, result, 0.0);
+        }
     }
