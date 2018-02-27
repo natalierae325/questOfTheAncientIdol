@@ -11,4 +11,10 @@ package controlLayer;
  */
 public class MapControl {
     
-}public class
+ public static string placesVisited(string currentRow, string currentColumn, string visitedRow, string visitedColumn) {
+        if ( currentRow && currentColumn == visitedRow && visitedColumn) {
+     
+ 
+            return -1;
+        }
+ }
