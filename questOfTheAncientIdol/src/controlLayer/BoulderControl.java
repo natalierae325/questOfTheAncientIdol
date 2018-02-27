@@ -29,4 +29,13 @@ public class BoulderControl {
         slopeDistance = Math.pow(9, 2) + Math.pow(16, 2) + Math.pow(slopeDistance, 2);
             return slopeDistance;
     }
+    
+    public static double calcUserSpeed (double userTimeInput, double userSpeed) {
+        if (userTimeInput < 1 || userTimeInput > 19 ) {
+            return -1;
+        }
+        
+        userSpeed = 19/userTimeInput;
+        return userSpeed;
+    }
 }
