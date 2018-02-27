@@ -11,6 +11,17 @@ package byui.cit260.questOfTheAncientIdol.view;
  */
 public class StartProgramView {
     public StartProgramView() {
-                
     }
+    public displayStartProgramView(){
+ endOfView = false;
+ DO
+inputs = getInputs()
+IF no inputs were entered OR the first input is Q
+ RETURN
+ENDIF
+endOfView = doAction(inputs)
+WHILE endOfView != true
+}        
+    }
+}
 }

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package questoftheancientidol;
+package controlLayer;
 
 /**
  *
  * @author abbeymj
  */
-public class MapControl {
+public class InventoryControl {
     
 }
