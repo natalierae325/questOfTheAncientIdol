@@ -9,6 +9,15 @@ package byui.cit260.questOfTheAncientIdol.view;
  *
  * @author natal
  */
+/**displayStartProgramView() {
+ endOfView = false
+ DO
+inputs = getInputs()
+IF no inputs were entered OR the first input is Q
+ RETURN
+ENDIF
+endOfView = doAction(inputs)
+WHILE endOfView != true */
 public class StartProgramView {
 
     public StartProgramView() {
@@ -21,7 +30,7 @@ public class StartProgramView {
         }
 
         do {
-            (var inputs =   var getInputs
+            (var inputs == var getInputs)
             
                 ){
       return;
