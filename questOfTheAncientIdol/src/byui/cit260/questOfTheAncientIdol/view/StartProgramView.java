@@ -12,11 +12,9 @@ package byui.cit260.questOfTheAncientIdol.view;
 public class StartProgramView {
 
     public StartProgramView() {
-    
-    
 
-    public displayStartProgramView() {
-        getInputs() {
+    public displayStartProgramView(getInputs) {
+        getInputs() 
             return;
         }
 
@@ -27,16 +25,17 @@ public class StartProgramView {
       return;
             }
 
-            if (0 || userInput ==) {
-                return;
+            if (value.length < 0) {
+                 System.out.println("\n*** Please enter a value.");
+                continue;
             }
-            ENDIF endOfView = doAction(inputs);
+            else {
+                endOfView = doAction(inputs);
+            }
             return;
-        } while
-        {
+        while
             (endOfView != true)
         }
 
     }
 }  
-}
