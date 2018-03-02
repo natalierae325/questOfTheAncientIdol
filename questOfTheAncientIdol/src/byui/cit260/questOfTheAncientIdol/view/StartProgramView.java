@@ -5,6 +5,10 @@
  */
 package byui.cit260.questOfTheAncientIdol.view;
 
+import java.util.Scanner;
+import Model.Player;
+import controlLayer.GameControl;
+
 /**
  *
  * @author natal
@@ -15,32 +19,31 @@ package byui.cit260.questOfTheAncientIdol.view;
  * doAction(inputs) WHILE endOfView != true
  */
 public class StartProgramView {
-
-    public displayStartProgramView() {
-        string[] inputs = new string[1];
+       String displayMessage = ("\n *** Enter your name ***"); 
+    public void displayStartProgramView() {
+        String[] inputs = new String[1];
         boolean endOfView = false;
-        value = getInputs();
-        input[] = value;
-        if (value.equals("Q")) {
-            endOfView = true;
-            continue;
+        do {
+            String value = getInput();
+            inputs[0] = value;
+            if (value.equals("Q")) {
+                endOfView = true;
+                continue;
+            }
 
             endOfView = doAction(inputs);
-        }
-        
-        
-
-    
+        } while (!endOfView);
+    }
 
     public String getInput() {
         Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
         String value = null;
 
-        while (value != valid) {
+        while (!valid) {
 
             System.out.println("\n" + this.displayMessage);
-            String displayMessage = ("\n *** Enter your name ***")
+            
             
             value = keyboard.nextLine();
             value = value.trim();
@@ -55,10 +58,12 @@ public class StartProgramView {
     }
 
     public boolean doAction(String[] inputValues) {
-        
+        String playersName = inputValues[0];
+        Player player = GameControl.savePlayer(playersName);
+
         System.out.println("\n" + this.displayMessage);
         String displayMessage = ("Welcome," + value + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
-       
+
         return false;
     }
 }
