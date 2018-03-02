@@ -16,41 +16,49 @@ package byui.cit260.questOfTheAncientIdol.view;
  */
 public class StartProgramView {
 
-
-    displayStartProgramView(){
+    public displayStartProgramView() {
         string[] inputs = new string[1];
         boolean endOfView = false;
         value = getInputs();
         input[] = value;
-        if (value.equals("Q")){
-            
-      
+        if (value.equals("Q")) {
+            endOfView = true;
+            continue;
+
+            endOfView = doAction(inputs);
+        }
         
-    } 
-        return;
-    }
+        
 
     
-        do {
-            (string inputs == string getInputs)
-        
-            ){
-      return;
-        }
 
-        if (value.length < 0) {
-            System.out.println("\n*** Please enter a value.");
-            continue;
-        } else {
-          doAction(inputs){
+    public String getInput() {
+        Scanner keyboard = new Scanner(System.in);
+        boolean valid = false;
+        String value = null;
+
+        while (value != valid) {
+
+            System.out.println("\n" + this.displayMessage);
+            String displayMessage = ("\n *** Enter your name ***")
             
+            value = keyboard.nextLine();
+            value = value.trim();
+
+            if (value.length() < 1) {
+                System.out.println("\n*** You must enter a value ***");
+                continue;
+            }
+            valid = true;
         }
-        }
-        return;
-        while (endOfView != true) {
-            
-        }
+        return value;
     }
 
-}
+    public boolean doAction(String[] inputValues) {
+        
+        System.out.println("\n" + this.displayMessage);
+        String displayMessage = ("Welcome," + value + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
+       
+        return false;
+    }
 }
