@@ -11,4 +11,11 @@ package byui.cit260.questOfTheAncientIdol.view;
  */
 public class MainMenuView {
     
+    
+    /* N - start new game
+    ** S - Save Game
+    ** G - Get and resume saved game
+    ** H - Help
+    ** Q - Quit
+    */
 }
