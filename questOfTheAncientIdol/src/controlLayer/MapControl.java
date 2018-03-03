@@ -11,10 +11,9 @@ package controlLayer;
  */
 public class MapControl {
     
- public static string placesVisited(string currentRow, string currentColumn, string visitedRow, string visitedColumn) {
-        if ( currentRow && currentColumn == visitedRow && visitedColumn) {
-     
- 
-            return -1;
+ public static String placesVisited(String currentRow, String currentColumn, String visitedRow, String visitedColumn) {
+        if ( currentRow == visitedRow && visitedColumn == currentColumn) {
         }
+        return;
  }
+}
