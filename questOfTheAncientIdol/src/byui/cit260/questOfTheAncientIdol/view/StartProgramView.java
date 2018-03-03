@@ -60,10 +60,19 @@ public class StartProgramView {
     public boolean doAction(String[] inputValues) {
         String playersName = inputValues[0];
         Player player = GameControl.savePlayer(playersName);
-
+        
+        if (player == null) {
+            displayMessage = ("Could not create the player." + "Enter a different name.");
+          return false;
+        }
+        
         System.out.println("\n" + this.displayMessage);
-        String displayMessage = ("Welcome," + value + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
+            displayMessage = ("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
 
         return false;
     }
+    
+    mainMenuView = MainMenuView.display;
+    mainMenuView.displayMainMenuView();
+    
 }
