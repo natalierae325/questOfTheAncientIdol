@@ -11,25 +11,14 @@ package byui.cit260.questOfTheAncientIdol.view;
  */
 public class HelpMenuView {
     
+    
+    
+    
+    
     /* Q - Quit
     ** P - Purpose of the game
     ** I - Inventory/Items throughout game
     ** T - Traveling in the board (How to play)
     */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
     
 }
