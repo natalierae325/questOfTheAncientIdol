@@ -6,7 +6,7 @@
 package byui.cit260.questOfTheAncientIdol.view;
 
 import java.util.Scanner;
-import 
+
 import controlLayer.GameControl;
 
 

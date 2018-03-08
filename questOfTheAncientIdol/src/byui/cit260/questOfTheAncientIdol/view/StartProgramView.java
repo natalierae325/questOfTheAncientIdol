@@ -54,7 +54,7 @@ public class StartProgramView {
             }
             valid = true;
         }
-        return value;
+        nreturn value;
     }
 
     public boolean doAction(String[] inputValues) {
