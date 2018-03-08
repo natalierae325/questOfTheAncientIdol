@@ -12,7 +12,7 @@ import controlLayer.GameControl;
 /**
  *
  * @author natal
- */
+ */ 
 /**
  * displayStartProgramView() { endOfView = false DO inputs = getInputs() IF no
  * inputs were entered OR the first input is Q RETURN ENDIF endOfView =
