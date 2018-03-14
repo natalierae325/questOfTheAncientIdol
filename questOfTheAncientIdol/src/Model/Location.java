@@ -17,6 +17,15 @@ public class Location implements Serializable{
     public Integer row;
     public String column;
     public String visited;
+    public SceneType scene;
+
+    public SceneType getScene() {
+        return scene;
+    }
+
+    public void setScene(SceneType scene) {
+        this.scene = scene;
+    }
 
     @Override
     public String toString() {
