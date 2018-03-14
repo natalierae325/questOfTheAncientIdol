@@ -5,6 +5,8 @@
  */
 package byui.cit260.questOfTheAncientIdol.view;
 
+import Model.Player;
+
 /**
  *
  * @author natal
@@ -39,13 +41,26 @@ public class MainMenuView {
             value = value.trim();
 
             if (value.length() < 1) {
-                System.out.println("\n*** Choose an option ***");
+                System.out.println("\n*** That value is not valid. ***");
                 continue;
             }
             valid = true;
         }
         return value;
     }
+    public boolean doAction(String[] inputValues) {
+        String playersName = inputValues[0];
+        Player player = GameControl.savePlayer(playersName);
+        
+        if (player == null) {
+            displayMessage = ("That is not a valid value." + "Enter a different value.");
+          return false;
+        }
+        if (string[N] == )
+        System.out.println("\n" + this.displayMessage);
+            displayMessage = ("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
+
+        return false;
     /* N - start new game
     ** S - Save Game
     ** G - Get and resume saved game
