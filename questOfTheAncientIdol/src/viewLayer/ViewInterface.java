@@ -10,15 +10,11 @@ package viewLayer;
  * @author natal
  */
 public class ViewInterface {
-    void display();
-<<<<<<< HEAD
-    String[] string getInput(String displayMessage);
-    String[] getInput();
-    boolean doAction String[]inputs
-=======
-    String[] string getInput(string, )
+    void public displayViewInterface();
+    String[] getInput(String[] displayMessage);
+    boolean doAction (String[] inputs);
 
->>>>>>> origin/master
+
     
     
 }
