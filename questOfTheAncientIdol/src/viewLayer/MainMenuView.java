@@ -9,7 +9,7 @@ package viewLayer;
  *
  * @author natal
  */
-public class MainMenuView {
+public class MainMenuView extends View {
        String displayMessage = ("\n *** Choose an option. ***"); 
     public void displayMainMenuView() {
         String[] inputs = new String[1];
