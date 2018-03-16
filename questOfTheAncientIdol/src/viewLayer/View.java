@@ -10,5 +10,11 @@ package viewLayer;
  * @author natal
  */
 public class View {
-    public void display();
+    public void display(){
+        
+    }
+    
+    public void getInput(String message) {
+        
+    }
 }
