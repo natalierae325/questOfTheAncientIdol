@@ -11,9 +11,14 @@ package viewLayer;
  */
 public class ViewInterface {
     void display();
+<<<<<<< HEAD
     String[] string getInput(String displayMessage);
     String[] getInput();
     boolean doAction String[]inputs
+=======
+    String[] string getInput(string, )
+
+>>>>>>> origin/master
     
     
 }
