@@ -47,8 +47,27 @@ public class MainMenuView extends View {
         return value;
     }
     
-    public boolean doAction() {
+    public boolean doAction(char choice) {
         
+        switch (choice) {
+            case 'N': // start new game
+                this.startNewGame();
+                break;
+            case 'S': //save game
+                this.saveGame();
+                break;
+            case 'G': //get and resume saved game
+                this.getAndResumeSavedGame
+                break;
+            case 'H': //help 
+                this.displayHelpMenu();
+                break;
+            case 'Q': //quit
+                return;
+            default:
+                System.out.println("\n*** Invalid selection ** Try again!");
+                break;
+        }
     }
     /* N - start new game
     ** S - Save Game
