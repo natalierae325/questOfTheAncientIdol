@@ -46,6 +46,10 @@ public class MainMenuView extends View {
         }
         return value;
     }
+    
+    public boolean doAction() {
+        
+    }
     /* N - start new game
     ** S - Save Game
     ** G - Get and resume saved game
