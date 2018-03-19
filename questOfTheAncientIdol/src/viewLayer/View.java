@@ -9,7 +9,7 @@ package viewLayer;
  *Notes - get lesson 9 team assignment done and then go back and make 3 more view layers, one of them has to be a menu view.
  * @author natal
  */
-public class View {
+public absract class View implements ViewInterface{
     public void display(){
         
     }
