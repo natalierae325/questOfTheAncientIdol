@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 import controlLayer.GameControl;
 
-
 /**
  *
  * @author abbeymj
@@ -34,15 +33,14 @@ public class HelpMenuView {
     }
 
     public String getInputs() {
-Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
         String value = null;
 
         while (!valid) {
 
             System.out.println("\n" + this.displayMessage);
-            
-            
+
             value = keyboard.nextLine();
             value = value.trim();
 
@@ -54,10 +52,19 @@ Scanner keyboard = new Scanner(System.in);
         }
         return value;
     }
-    }
+}
 
-    public boolean doAction(String[] inputValues) {
+public boolean doAction(String[] inputValues) {
                
+        switch (choice) {
+            case 'P': //purpose of the game
+                
+            case 'I': //inventory/items throught game
+
+            case 'T': //traveling in the board (how to play)
+
+            case 'Q': //quti
+                return;
 
     }
 
