@@ -10,12 +10,9 @@ package viewLayer;
  * @author natal
  */
 public class ViewInterface {
-    public void display(){
-    }
-    public String[] getInputs(){
-        return;
-    }
-    public String[] getInputs(String displayMessage);
+    public void displayView();
+    public String[] getInputs();
+     public String[] getInput(String displayMessage);
     public boolean doAction(String[] inputs);
        
 }
