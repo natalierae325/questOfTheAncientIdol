@@ -62,7 +62,10 @@ public boolean doAction(String[] inputValues) {
             case 'I': //inventory/items throught game
                 System.out.println("There are two types of items within this game: treasures and tools/weapons. Treasures throughout the game are yours for the taking! Whenever you stumble upon a treasure item, a message will display letting you know it’s a treasure item and telling you to grab it, so grab it! The tools/weapons in the game are there to help you get through traps and other obstacles that come your way in different rooms of the map. Grabbing these will help you stay alive and overcome obstacles throughout the game, take advantage of them!")
             case 'T': //traveling in the board (how to play)
-                System.out.println("To travel throughout the board")
+                System.out.println("To travel throughout the board you will use one of three keys on the keyboard."
++                                  "\n*** F to move forward one space ***"
++                                  "\n*** L to move left one space ***"
++                                  "\n*** R to move right one space ***"
             case 'Q': //quit
                 return;
             default:
