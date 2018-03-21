@@ -10,5 +10,5 @@ package viewLayer;
  * @author abbeymj
  */
 public class GameControlView {
-    
+    // create a new game method and define it
 }
