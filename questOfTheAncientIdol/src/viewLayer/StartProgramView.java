@@ -18,9 +18,10 @@ import controlLayer.GameControl;
  * inputs were entered OR the first input is Q RETURN ENDIF endOfView =
  * doAction(inputs) WHILE endOfView != true
  */
-public class StartProgramView {
-       String displayMessage = ("\n *** Enter your name ***"); 
-    public void displayStartProgramView() {
+public class StartProgramView extends View {
+       String displayMessage = ("\n *** Enter your name ***");
+       @Override
+    public void displayStartProgramView implements() {
         String[] inputs = new String[1];
         boolean endOfView = false;
         do {
@@ -58,6 +59,8 @@ public class StartProgramView {
     }
 
     public boolean doAction(String[] inputValues) {
+        String playersName = this.getInput("\nPlease enter your name: ");
+        inputs[0] = playersName;
         String playersName = inputValues[0];
         Player player = GameControl.savePlayer(playersName);
         

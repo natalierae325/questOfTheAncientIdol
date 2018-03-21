@@ -10,15 +10,11 @@ import java.util.Scanner;
  *Notes - get lesson 9 team assignment done and then go back and make 3 more view layers, one of them has to be a menu view.
  * @author natal
  */
-public absract class View implements ViewInterface {
-    public display(){
-        
-    }
-}
-
- class View implements ViewInterface{
-     String displayMessage = ("\n *** Enter your name ***"); 
-    public void displayView() {
+public abstract class View implements ViewInterface {
+    @Override
+     public void displayView() {
+     String displayMessage = ("\n *** Enter your name ***");
+    
         String[] inputs = new String[1];
         boolean endOfView = false;
         do {
@@ -32,8 +28,7 @@ public absract class View implements ViewInterface {
             endOfView = doAction(inputs);
         } while (!endOfView);
     }
-
-    public String getInput (String displayMessage) {
+    public String getInput(String displayMessage) {
         Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
         String value = null;
@@ -55,18 +50,18 @@ public absract class View implements ViewInterface {
         return value;
     }
 
-    public boolean doAction(String[] inputValues) {
+    public boolean doAction ViewInterface(String[] inputValues) {
         String playersName = inputValues[0];
         Player player = GameControl.savePlayer(playersName);
         
         if (player == null) {
             displayMessage = ("Could not create the player." + "Enter a different name.");
-          return false;
+          return;
         }
         
         System.out.println("\n" + this.displayMessage);
             displayMessage = ("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
 
-        return false;
+        return;
     }
 }

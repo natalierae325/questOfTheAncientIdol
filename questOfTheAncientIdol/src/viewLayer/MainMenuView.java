@@ -10,8 +10,9 @@ package viewLayer;
  * @author natal
  */
 public class MainMenuView extends View {
-       String displayMessage = ("\n *** Choose an option. ***"); 
-    public void displayMainMenuView() {
+       String displayMessage = ("\n *** Choose an option. ***");
+    @Override   
+    public void displayMainMenuView extends View() {
         String[] inputs = new String[1];
         boolean endOfView = false;
         do {
@@ -25,7 +26,7 @@ public class MainMenuView extends View {
             endOfView = doAction(inputs);
         } while (!endOfView);
     }  
-    public String getInput() {
+    public String getInput extends View() {
         Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
         String value = null;
@@ -47,7 +48,7 @@ public class MainMenuView extends View {
         return value;
     }
     
-    public boolean doAction(char choice) {
+    public boolean doAction extends View(char choice) {
         
         switch (choice) {
             case 'N': // start new game
