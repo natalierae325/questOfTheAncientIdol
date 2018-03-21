@@ -13,32 +13,32 @@ package Model;
 public class QuestOfTheAncientIdol {
 
     // MASTER KEY OF PUSH BUTTON COMMANDS
-    //A
-    //B
-    //C
-    //D
-    //E
+    //A -
+    //B -
+    //C - 
+    //D -
+    //E -
     //F - MOVE FORWARD (within the TRAVEL option (HelpMenu))
     //G - GET AND RESUME SAVED GAME (MainMenu)
     //H - HELP (MainMenu)
     //I - INVENTORY/ITEMS IN THE GAME (HelpMenu)
-    //J
-    //K
+    //J -  
+    //K -
     //L - MOVE LEFT (within the TRAVEL option (HelpMenu))
-    //M
+    //M -
     //N - NEW GAME (MainMenu)
-    //O
+    //O -
     //P - PURPOSE OF THE GAME (HelpMenu)
     //Q - QUIT (all view classes)
     //R - MOVE RIGHT (within the TRAVEL option (HelpMenu))
     //S - SAVE (MainMenu)
     //T - TRAVELING THE BOARD (HelpMenu)
-    //U
-    //V
-    //W
-    //X
-    //Y
-    //Z
+    //U -
+    //V -
+    //W -
+    //X -
+    //Y -
+    //Z -
     /**
      * @param args the command line arguments
      */
