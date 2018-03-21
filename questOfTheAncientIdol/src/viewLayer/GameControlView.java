@@ -11,4 +11,15 @@ package viewLayer;
  */
 public class GameControlView {
     // create a new game method and define it
+    public static int createNewGame(Player player) {
+        if (player == null)
+            return -1;
+        
+        game =
+  
+    }
+    
+    
+    
 }
+ 
