@@ -58,7 +58,7 @@ public class MainMenuView extends View {
                 this.saveGame();
                 break;
             case 'G': //get and resume saved game
-                this.getAndResumeSavedGame
+                this.getAndResumeSavedGame()
                 break;
             case 'H': //help 
                 this.displayHelpMenu();

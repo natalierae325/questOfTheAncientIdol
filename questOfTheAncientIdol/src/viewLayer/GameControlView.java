@@ -9,15 +9,6 @@ package viewLayer;
  *
  * @author abbeymj
  */
-public class MoveView {
-    switch (choice) {
-        case 'F': //move forward one space
-        
-        case 'L': //move left one space
-        
-        case 'R': //move right one space
-        
-        
-    
-}
+public class GameControlView {
+    // create a new game method and define it
 }
