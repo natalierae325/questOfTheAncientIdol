@@ -13,24 +13,11 @@ import controlLayer.GameControl;
  *
  * @author abbeymj
  */
-public class HelpMenuView {
+public class HelpMenuView extends View {
 
     String displayMessage = ("\n *** Choose an option. ***");
 
-    public void displayHelpMenuView() {
-        String[] inputs = new String[1];
-        boolean endOfView = false;
-        do {
-            String value = getInput();
-            inputs[0] = value;
-            if (value.equals("Q")) {
-                endOfView = true;
-                continue;
-            }
-
-            endOfView = doAction(inputs);
-        } while (!endOfView);
-    }
+  
 
     public String getInputs() {
         Scanner keyboard = new Scanner(System.in);
@@ -53,8 +40,8 @@ public class HelpMenuView {
         return value;
     }
 }
-
-public boolean doAction(String[] inputValues) {
+@Override
+public boolean doAction(String[] inputs) {
 
 System.out.println("*** This menu is here to help you understand the game better! ***"
 +                   "\n Press P for the purpose of the game"
@@ -62,7 +49,8 @@ System.out.println("*** This menu is here to help you understand the game better
 +                   "\n Press T for information on how to travel in the board"
 +                   "\n Press S to learn how to save a game"
 +                   "\n Press Q to learn how to quit the game"))
-               
+
+        String choice = inputs[0];
         switch (choice) {
             case 'P': //purpose of the game
                 System.out.println("*** The purpose of this game is to return the anciet idol, found in your backpack, to pedestal found in the last room after correctly answering a question. ***");
@@ -93,3 +81,25 @@ System.out.println("*** This menu is here to help you understand the game better
     ** T - Traveling in the board (How to play)
      */
 }
+
+@Override
+public String[] getInputs() {
+    string[] inputs = new String[1];
+    
+    System.out.println("***Help Menu***"
++        "\n"
++        "\n"
++        "\n"
++        "\n")
+
+    String.value = this.getInput("Enter one of the menu options.")
+
+    inputs[0] = value;
+    return inputs;
+    
+}
+
+
+
+
+
