@@ -25,8 +25,8 @@ public class QuestOfTheAncientIdol {
     //J -  
     //K -
     //L - MOVE LEFT (within the TRAVEL option (HelpMenu))
-    //M -
-    //N - NEW GAME (MainMenu)
+    //M - GO TO THE MAIN MENU (HelpMenu)
+    //N - NEW GAME (MainMenu, also found in the help menu)
     //O -
     //P - PURPOSE OF THE GAME (HelpMenu)
     //Q - QUIT (all view classes)
