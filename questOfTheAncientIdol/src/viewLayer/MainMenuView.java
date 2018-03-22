@@ -10,70 +10,65 @@ package viewLayer;
  * @author natal
  */
 public class MainMenuView extends View {
-       String displayMessage = ("\n *** Choose an option. ***");
-    @Override   
-    public void displayMainMenuView extends View() {
+
+    @Override
+    public String[] getInputs() {
+        // create a new array of Strings called inputs whose length is the number of inputs to be retrieved (1)
         String[] inputs = new String[1];
-        boolean endOfView = false;
-        do {
-            String value = getInput();
-            inputs[0] = value;
-            if (value.equals("Q")) {
-                endOfView = true;
-                continue;
-            }
 
-            endOfView = doAction(inputs);
-        } while (!endOfView);
-    }  
-    public String getInput extends View() {
-        Scanner keyboard = new Scanner(System.in);
-        boolean valid = false;
-        String value = null;
-
-        while (!valid) {
-
-            System.out.println("\n" + this.displayMessage);
-            
-            
-            value = keyboard.nextLine();
-            value = value.trim();
-
-            if (value.length() < 1) {
-                System.out.println("\n*** Choose an option ***");
-                continue;
-            }
-            valid = true;
-        }
-        return value;
-    }
-    
-    public boolean doAction extends View(char choice) {
+        // display the text of the main menu
+        System.out.println("Main Menu"
+                + "N - start new game"
+                + "\nS - Save Game"
+                + "\nG - Get and resume saved game"
+                + "\nH - Help"
+                + "\nQ - Quit");
         
-        switch (choice) {
-            case 'N': // start new game
+        // prompt for and get the menu input by the end user
+        String value = this.getInput("Enter one of the menu options.");
+        
+        // asssign the value input to the first position in the inputs array
+        inputs[0] = value;
+        return inputs;
+    }
+
+    @Override
+    public boolean doAction(String[] inputs) {
+        String choice = inputs[0];
+       switch (choice) {
+            case "N": // start new game
                 this.startNewGame();
                 break;
-            case 'S': //save game
+            case "S": //save game
                 this.saveGame();
                 break;
-            case 'G': //get and resume saved game
-                this.getAndResumeSavedGame()
+            case "G": //get and resume saved game
+                this.getAndResumeSavedGame();
                 break;
-            case 'H': //help 
+            case "H": //help 
                 this.displayHelpMenu();
                 break;
-            case 'Q': //quit
-                return;
             default:
                 System.out.println("\n*** Invalid selection ** Try again!");
                 break;
         }
+       return false;
     }
-    /* N - start new game
-    ** S - Save Game
-    ** G - Get and resume saved game
-    ** H - Help
-    ** Q - Quit
-    */
+
+    private void startNewGame() {
+        
+    }
+
+    private void saveGame() {
+        
+    }
+
+    private void getAndResumeSavedGame() {
+        
+    }
+
+    private void displayHelpMenu() {
+        HelpMenuView helpMenuView = new HelpMenuView();
+        helpMenuView.displayHelpMenuView();
+    }
 }

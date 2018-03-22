@@ -9,10 +9,10 @@ package viewLayer;
  *
  * @author natal
  */
-public abstract class ViewInterface {
-    public abstract void displayView();
-    public abstract String[] getInputs();
-    public abstract String[] getInput(String displayMessage);
-    public abstract boolean doAction(String[] inputs);
+public interface ViewInterface {
+    public  void displayView();
+    public  String[] getInputs();
+    public  String getInput(String displayMessage);
+    public  boolean doAction(String[] inputs);
        
 }
