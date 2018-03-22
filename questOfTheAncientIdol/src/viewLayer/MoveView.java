@@ -12,12 +12,14 @@ package viewLayer;
 public class MoveView {
     switch (choice) {
         case 'F': //move forward one space
-        
+            
+            break;
         case 'L': //move left one space
         
+            break;
         case 'R': //move right one space
         
-        
+            break;
     
 }
 }
