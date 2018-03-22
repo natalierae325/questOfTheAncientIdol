@@ -65,7 +65,7 @@ public absract class View implements ViewInterface {
         }
         
         System.out.println("\n" + this.displayMessage);
-            displayMessage = ("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
+            displayMessage = ("Welcome, " + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
 
         return false;
     }

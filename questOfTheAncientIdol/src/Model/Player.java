@@ -17,13 +17,13 @@ import java.io.Serializable;
  * @author natal
  */
 public class Player implements Serializable{
-    private  String playersName;
+    
     private double bestScore;
     
     public Player() {
         this.bestScore = 0.0;
     }
-    public String getPlayername() {
+    public String getPlayerName() {
         return this.playersName;
     }
     public void setPlayerName(String newName) {
