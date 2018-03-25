@@ -38,7 +38,7 @@ public class MainMenuView extends View {
        switch (choice) {
             case "N": // start new game
                 this.startNewGame();
-                break;
+                break ;
             case "S": //save game
                 this.saveGame();
                 break;
