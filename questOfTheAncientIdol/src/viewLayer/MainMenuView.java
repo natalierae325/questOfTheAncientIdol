@@ -48,6 +48,9 @@ public class MainMenuView extends View {
             case "H": //help 
                 this.displayHelpMenu();
                 break;
+            case "E": //exit menu
+                this.exitMenu();
+                break;
             case "Q": //quit
                 this.endGame();
                 break;
@@ -73,6 +76,10 @@ public class MainMenuView extends View {
     private void displayHelpMenu() {
         HelpMenuView helpMenuView = new HelpMenuView();
         helpMenuView.displayHelpMenuView();
+    }
+    
+    private void exitMenu() {
+        
     }
     
     private void endGame() {

@@ -17,7 +17,7 @@ public class QuestOfTheAncientIdol {
     //B -
     //C - 
     //D -
-    //E -
+    //E - EXIT MENU (help, main, move,)
     //F - MOVE FORWARD (within the TRAVEL option (HelpMenu))
     //G - GET AND RESUME SAVED GAME (MainMenu)
     //H - HELP (MainMenu)
