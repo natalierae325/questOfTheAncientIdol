@@ -6,7 +6,6 @@
 package viewLayer;
 
 import java.util.Scanner;
-
 import controlLayer.GameControl;
 
 /**
@@ -94,7 +93,9 @@ public class HelpMenuView extends View {
 }
 
     private void displayMainMenu() {
-            
+        mainMenuView = MainMenuView.display;
+        mainMenuView.displayMainMenuView();
+    
 }
 
     private void startNewGame() {
