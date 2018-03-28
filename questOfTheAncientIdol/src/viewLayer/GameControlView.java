@@ -5,6 +5,9 @@
  */
 package viewLayer;
 
+import Model.Game;
+import Model.Player;
+
 /**
  *
  * @author abbeymj
@@ -15,8 +18,14 @@ public class GameControlView {
         if (player == null)
             return -1;
         
-        game =
-  
+        Game game = new Game(); 
+        //game = create a new Game object
+        actors = createActors();
+        
+    }
+
+    private static void newGame() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
