@@ -12,14 +12,36 @@ package viewLayer;
 public class MoveView {
     switch (choice) {
         case 'F': //move forward one space
-            
+            this.moveForward();
             break;
         case 'L': //move left one space
-        
+            this.moveLeft();
             break;
         case 'R': //move right one space
-        
+            this.moveRight();
             break;
+        case "E": //quit
+            this.exitMenu();
+            break;
+        default: 
+            System.out.println("\n*** Invalid selection ** Try again!");
+            break;
+    }
     
-}
+    private void moveForward() {
+        
+    }
+    
+    private void moveLeft() {
+        
+    }
+    
+    private void moveRight() {
+        
+    }
+    
+    private void exitMenu(){
+        
+    }
+    
 }

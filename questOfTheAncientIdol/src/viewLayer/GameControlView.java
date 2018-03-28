@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package viewLayer;
+import Model.Player;
 
 import Model.Game;
 import Model.Player;

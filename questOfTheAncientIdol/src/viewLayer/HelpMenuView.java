@@ -6,7 +6,6 @@
 package viewLayer;
 
 import java.util.Scanner;
-
 import controlLayer.GameControl;
 
 /**
@@ -58,6 +57,9 @@ public class HelpMenuView extends View {
                  break;
             case "N": // start a new game
                  this.startNewGame()
+            case "E": //exit menu
+                 this.exitMenu();
+                 break;
             case "Q": //quit
                  this.endGame();
                 return;
@@ -91,12 +93,18 @@ public class HelpMenuView extends View {
 }
 
     private void displayMainMenu() {
-
+        mainMenuView = MainMenuView.display;
+        mainMenuView.displayMainMenuView();
+    
 }
 
     private void startNewGame() {
 
 }
+    
+    private void exitMenu() {
+        
+    }
     
     private void endGame() {
                      // System.out.println("*** At any point in time while you are playing the game and want to quit, PRESS Q. ***")
