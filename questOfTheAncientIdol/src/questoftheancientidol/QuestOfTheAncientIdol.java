@@ -5,6 +5,7 @@
  */
 package questoftheancientidol;
 
+
 /**
  *
  * @author natal
@@ -15,7 +16,17 @@ public class QuestOfTheAncientIdol {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic here 
+    }
+    public Game currentGame(){
+        
+    }
     }
     
+    public static Player player();
 }
+//Game curentGame
+//Player player
+//getCurrentGame()
+//setCurrentGame(Game game)
+//
