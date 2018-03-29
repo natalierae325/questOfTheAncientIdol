@@ -13,7 +13,53 @@ import java.util.Objects;
  */
 public class Game implements Serializable{
     private String gameCompletionStatus;
-   
+    private Player player;
+    private Actor[] actors;
+    private Items[] items;
+    private Map[] map;
+    private Game[] game;
+
+    public Game[] getGame() {
+        return game;
+    }
+
+    public void setGame(Game[] game) {
+        this.game = game;
+    }
+
+    public Map[] getMap() {
+        return map;
+    }
+
+    public void setMap(Map[] map) {
+        this.map = map;
+    }
+
+    public Items[] getItems() {
+        return items;
+    }
+
+    public void setItems(Items[] items) {
+        this.items = items;
+    }
+    
+
+    public Actor[] getActors() {
+        return actors;
+    }
+
+    public void setActors(Actor[] actors) {
+        this.actors = actors;
+    }
+    
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+    
 
     public Game() {
           

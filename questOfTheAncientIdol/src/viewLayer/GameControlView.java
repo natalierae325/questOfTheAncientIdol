@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 package viewLayer;
+import Model.Actor;
 import Model.Player;
 
 import Model.Game;
+import Model.Map;
 import Model.Player;
+import questoftheancientidol.QuestOfTheAncientIdol;
 
 /**
  *
@@ -20,11 +23,37 @@ public class GameControlView {
             return -1;
         
         Game game = new Game(); 
-        //game = create a new Game object
-        actors = createActors();
+        game.setPlayer(player);
         
+       QuestOfTheAncientIdol quest = new QuestOfTheAncientIdol();
+       quest.setCurrentGame(game);
+       
+       Actor[] actors = createActors();
+       game.setActors(actors);
+       game.getPlayer().setActor(actors[0]);
+       
+       Items[] items = createItems();
+       game.setItems(items);
+       
+       Map map= createMap(numberRows, numberColumns, items);
+       if (map == null) {
+           return -1;
     }
-
+       
+       
+       game.getGame().setMap()
+    
+    public static Items[] createItems(){
+        Items[] items = new Items[30];
+        return items;
+    }
+    
+    
+    public static Actor[] createActors(){
+        Actor[] actors = new Actor[3];
+        return actors;
+    }
+    
     private static void newGame() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

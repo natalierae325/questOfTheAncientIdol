@@ -19,6 +19,15 @@ import java.io.Serializable;
 public class Player implements Serializable{
     
     private double bestScore;
+    private Actor actor;
+
+    public Actor getActor() {
+        return actor;
+    }
+
+    public void setActor(Actor actor) {
+        this.actor = actor;
+    }
     
     public Player() {
         this.bestScore = 0.0;

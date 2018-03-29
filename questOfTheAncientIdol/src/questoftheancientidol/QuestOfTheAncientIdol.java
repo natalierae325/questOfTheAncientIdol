@@ -36,7 +36,7 @@ public class QuestOfTheAncientIdol {
         return currentGame;
     }
 
-    public static void setCurrentGame(Game currentGame) {
+    public void setCurrentGame(Game currentGame) {
         QuestOfTheAncientIdol.currentGame = currentGame;
     }
 {
