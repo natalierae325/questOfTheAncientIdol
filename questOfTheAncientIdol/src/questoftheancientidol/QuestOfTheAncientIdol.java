@@ -5,6 +5,9 @@
  */
 package questoftheancientidol;
 
+import Model.Game;
+import Model.Player;
+
 
 /**
  *
@@ -18,9 +21,26 @@ public class QuestOfTheAncientIdol {
     public static void main(String[] args) {
         // TODO code application logic here 
     }
-    public Game currentGame(){
-        
+    public static Game currentGame;
+    public static Player player;
+
+    public static Player getPlayer() {
+        return player;
     }
+
+    public static void setPlayer(Player player) {
+        QuestOfTheAncientIdol.player = player;
+    }
+
+    public static Game getCurrentGame() {
+        return currentGame;
+    }
+
+    public static void setCurrentGame(Game currentGame) {
+        QuestOfTheAncientIdol.currentGame = currentGame;
+    }
+{
+        
     }
     
     public static Player player();

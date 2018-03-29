@@ -10,7 +10,7 @@ package Model;
  *
  * @author natal
  */
-public class QuestOfTheAncientIdol {
+public class Notes {
 
     // MASTER KEY OF PUSH BUTTON COMMANDS
     //A -
