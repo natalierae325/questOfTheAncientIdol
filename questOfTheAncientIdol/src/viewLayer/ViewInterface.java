@@ -14,5 +14,11 @@ public interface ViewInterface {
     public  String[] getInputs();
     public  String getInput(String displayMessage);
     public  boolean doAction(String[] inputs);
+
        
+}
+ public static class Actor[] createActors() {
+ Actor[] actors = new Actor;
+ actor[1] = new actor;
+
 }
