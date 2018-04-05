@@ -11,6 +11,9 @@ package controlLayer;
  */
 public class BoulderControl {
 
+    public BoulderControl() {
+    }
+
     public static double calcBoulderVolume(double boulderRadius) {
         if (boulderRadius < 0 || boulderRadius > 15) {
             return -1;
