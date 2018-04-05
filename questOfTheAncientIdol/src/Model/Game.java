@@ -12,6 +12,15 @@ import java.util.Objects;
  * @author natal
  */
 public class Game implements Serializable{
+
+    public Game(String gameCompletionStatus, Player player, Actor[] actors, Items[] items, Map[] map, Game[] game) {
+        this.gameCompletionStatus = gameCompletionStatus;
+        this.player = player;
+        this.actors = actors;
+        this.items = items;
+        this.map = map;
+        this.game = game;
+    }
     private String gameCompletionStatus;
     private Player player;
     private Actor[] actors;

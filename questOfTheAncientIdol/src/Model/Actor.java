@@ -5,11 +5,13 @@ import java.util.Objects;
 
 public class Actor implements Serializable {
 
-   
-
-    
-
-    
+    public Actor(String name, String description, String coordinates, String playingCharacter, String nonPlayingCharacter) {
+        this.name = name;
+        this.description = description;
+        this.coordinates = coordinates;
+        this.playingCharacter = playingCharacter;
+        this.nonPlayingCharacter = nonPlayingCharacter;
+    }
     
     private String name;
     private String description;
