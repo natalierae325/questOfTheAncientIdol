@@ -14,6 +14,15 @@ import java.util.Objects;
  */
 public class Item implements Serializable{
 
+    public Item(String Knife, String Gun, String Rope, String Idol, String Rubies, String Gold) {
+        this.Knife = Knife;
+        this.Gun = Gun;
+        this.Rope = Rope;
+        this.Idol = Idol;
+        this.Rubies = Rubies;
+        this.Gold = Gold;
+    }
+
     @Override
     public int hashCode() {
         int hash = 3;

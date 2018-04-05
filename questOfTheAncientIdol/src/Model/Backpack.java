@@ -10,5 +10,8 @@ package Model;
  * @author abbeymj
  */
 public class Backpack {
+
+    public Backpack() {
+    }
     
 }

@@ -40,6 +40,35 @@ public class Notes {
     //Y -
     //Z -
     /**
+     * 
+     *constructors on everything
+     *
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
