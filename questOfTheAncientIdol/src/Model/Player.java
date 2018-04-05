@@ -17,6 +17,11 @@ import java.io.Serializable;
  * @author natal
  */
 public class Player implements Serializable{
+
+    public Player(double bestScore, Actor actor) {
+        this.bestScore = bestScore;
+        this.actor = actor;
+    }
     
     private double bestScore;
     private Actor actor;

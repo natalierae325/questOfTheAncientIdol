@@ -15,6 +15,17 @@ import java.util.Objects;
 
 public class Map implements Serializable{
 
+    public Map(Map map, String numberRows, String numberColumns, String rowCount, String columnCount, String currentRown, String currentColumn, String description) {
+        this.map = map;
+        this.numberRows = numberRows;
+        this.numberColumns = numberColumns;
+        this.rowCount = rowCount;
+        this.columnCount = columnCount;
+        this.currentRown = currentRown;
+        this.currentColumn = currentColumn;
+        this.description = description;
+    }
+
     private Map map;
     private String numberRows;
     private String numberColumns;

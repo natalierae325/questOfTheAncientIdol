@@ -13,6 +13,13 @@ import java.util.Objects;
  * @author abbeymj
  */
 public class Location implements Serializable{
+
+    public Location(Integer row, String column, String visited, SceneType scene) {
+        this.row = row;
+        this.column = column;
+        this.visited = visited;
+        this.scene = scene;
+    }
     
     public Integer row;
     public String column;
