@@ -10,5 +10,8 @@ package controlLayer;
  * @author abbeymj
  */
 public class InventoryControl {
+
+    public InventoryControl() {
+    }
     
 }

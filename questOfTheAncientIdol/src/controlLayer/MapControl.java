@@ -15,6 +15,9 @@ import Model.QuestionScene;
  * @author abbeymj
  */
 public class MapControl {
+
+    public MapControl() {
+    }
     
  public static String placesVisited(String currentRow, String currentColumn, String visitedRow, String visitedColumn) {
         if ( currentRow == visitedRow && visitedColumn == currentColumn) {
@@ -35,6 +38,7 @@ public class MapControl {
              locations[i][k].setScene(scene);
          }
      }
+     
      
      return map;
  }

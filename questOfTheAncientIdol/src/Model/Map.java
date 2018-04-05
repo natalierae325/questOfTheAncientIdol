@@ -6,6 +6,7 @@
 package Model;
 
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -15,50 +16,20 @@ import java.util.Objects;
 
 public class Map implements Serializable{
 
-    private Map map;
-    private String numberRows;
-    private String numberColumns;
+    private int numberRows;
+    private int numberColumns;
+    private Location[][] locations;
 
-    public String getNumberRows() {
-        return numberRows;
-    }
-
-    public void setNumberRows(String numberRows) {
-        this.numberRows = numberRows;
-    }
-
-    public String getNumberColumns() {
-        return numberColumns;
-    }
-
-    public void setNumberColumns(String numberColumns) {
-        this.numberColumns = numberColumns;
-    }
-    
-
-    public Map getMap() {
-        return map;
-    }
-
-    public void setMap(Map map) {
-        this.map = map;
-    }
-    
-    
-    
-    @Override
-    public String toString() {
-        return "Map{" + "rowCount=" + rowCount + ", columnCount=" + columnCount + ", currentRown=" + currentRown + ", currentColumn=" + currentColumn + ", description=" + description + '}';
+    public Map(int numberRows, int numberColumns) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 31 * hash + Objects.hashCode(this.rowCount);
-        hash = 31 * hash + Objects.hashCode(this.columnCount);
-        hash = 31 * hash + Objects.hashCode(this.currentRown);
-        hash = 31 * hash + Objects.hashCode(this.currentColumn);
-        hash = 31 * hash + Objects.hashCode(this.description);
+        int hash = 3;
+        hash = 71 * hash + this.numberRows;
+        hash = 71 * hash + this.numberColumns;
+        hash = 71 * hash + Arrays.deepHashCode(this.locations);
         return hash;
     }
 
@@ -74,69 +45,44 @@ public class Map implements Serializable{
             return false;
         }
         final Map other = (Map) obj;
-        if (!Objects.equals(this.rowCount, other.rowCount)) {
+        if (this.numberRows != other.numberRows) {
             return false;
         }
-        if (!Objects.equals(this.columnCount, other.columnCount)) {
+        if (this.numberColumns != other.numberColumns) {
             return false;
         }
-        if (!Objects.equals(this.currentRown, other.currentRown)) {
-            return false;
-        }
-        if (!Objects.equals(this.currentColumn, other.currentColumn)) {
-            return false;
-        }
-        if (!Objects.equals(this.description, other.description)) {
+        if (!Arrays.deepEquals(this.locations, other.locations)) {
             return false;
         }
         return true;
     }
-    public String rowCount;
-    public String columnCount;
-    public String currentRown;
-    public String currentColumn;
-    public String description;
 
-    public String getDescription() {
-        return description;
+    public Location[][] getLocations() {
+        return locations;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLocations(Location[][] locations) {
+        this.locations = locations;
     }
 
-    public String getRowCount() {
-        return rowCount;
+    public int getNumberRows() {
+        return numberRows;
     }
 
-    public void setRowCount(String rowCount) {
-        this.rowCount = rowCount;
+    public void setNumberRows(int numberRows) {
+        this.numberRows = numberRows;
     }
 
-    public String getColumnCount() {
-        return columnCount;
+    public int getNumberColumns() {
+        return numberColumns;
     }
 
-    public void setColumnCount(String columnCount) {
-        this.columnCount = columnCount;
+    public void setNumberColumns(int numberColumns) {
+        this.numberColumns = numberColumns;
     }
+   
 
-    public String getCurrentRown() {
-        return currentRown;
-    }
-
-    public void setCurrentRown(String currentRown) {
-        this.currentRown = currentRown;
-    }
-
-    public String getCurrentColumn() {
-        return currentColumn;
-    }
-
-    public void setCurrentColumn(String currentColumn) {
-        this.currentColumn = currentColumn;
-    }
     
-    
-    
+
 }
+   

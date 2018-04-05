@@ -15,6 +15,9 @@ import Model.Player;
  */
 public class QuestOfTheAncientIdol {
 
+    public QuestOfTheAncientIdol() {
+    }
+
     /**
      * @param args the command line arguments
      */

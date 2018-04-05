@@ -15,6 +15,9 @@ import controlLayer.GameControl;
 
 public class HelpMenuView extends View {
 
+    public HelpMenuView() {
+    }
+
         @Override
         public String[] getInputs() {
         
@@ -81,7 +84,7 @@ public class HelpMenuView extends View {
 }
 
     private void travelInformation() {
-        //System.out.println("To travel throughout the board you will use one of three keys on the keyboar:"
+        //System.out.println("To travel throughout the board you will use one of three keys on the keyboard:"
 +                                //"\n F to move forward one space"
 +                               //"\n L to move left one space"
 +                                //"\n R to move right one space"

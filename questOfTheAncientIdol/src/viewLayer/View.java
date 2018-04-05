@@ -16,6 +16,9 @@ import java.util.Scanner;
  */
 public abstract class View implements ViewInterface {
 
+    public View() {
+    }
+
     @Override
     public void displayView() {
 

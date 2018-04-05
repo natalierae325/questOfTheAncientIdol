@@ -10,6 +10,10 @@ package viewLayer;
  * @author abbeymj
  */
 public class MoveView {
+
+    public MoveView(){
+    }
+    
     switch (choice) {
         case 'F': //move forward one space
             this.moveForward();

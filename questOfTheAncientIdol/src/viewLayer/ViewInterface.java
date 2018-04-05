@@ -8,13 +8,17 @@ package viewLayer;
 /**
  *
  * @author natal
- */
+*/
+
+
 public interface ViewInterface {
     public  void displayView();
     public  String[] getInputs();
     public  String getInput(String displayMessage);
     public  boolean doAction(String[] inputs);
 
+       public ViewInterface(){
+}
        
 }
  public static class Actor[] createActors() {

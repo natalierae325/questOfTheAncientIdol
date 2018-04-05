@@ -13,6 +13,10 @@ import java.util.Objects;
  */
 public class QuestionScene implements Serializable{
   private String answer;
+
+    public QuestionScene() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     @Override
     public String toString() {
         return "QuestionScene{" + "answer=" + answer + '}';

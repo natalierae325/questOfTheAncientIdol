@@ -19,6 +19,9 @@ import controlLayer.GameControl;
  * doAction(inputs) WHILE endOfView != true
  */
 public class StartProgramView extends View {
+
+    public StartProgramView() {
+    }
        String displayMessage = ("\n *** Enter your name ***");
        @Override
     public void displayStartProgramView implements() {

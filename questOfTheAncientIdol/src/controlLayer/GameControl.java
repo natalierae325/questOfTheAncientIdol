@@ -1,24 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package viewLayer;
-import Model.Actor;
-import Model.Player;
+package controlLayer;
 
+import Model.Actor;
 import Model.Game;
+import Model.Item;
 import Model.Map;
 import Model.Player;
 import questoftheancientidol.QuestOfTheAncientIdol;
 
-/**
- *
- * @author abbeymj
- */
-public class GameControlView {
-    // create a new game method and define it
-    public static int createNewGame(Player player) {
+
+public class GameControl {
+
+public GameControl() {
+    
+}
+
+    
+
+public static int createNewGame(Player player) {
         if (player == null)
             return -1;
         
@@ -32,8 +30,8 @@ public class GameControlView {
        game.setActors(actors);
        game.getPlayer().setActor(actors[0]);
        
-       Items[] items = createItems();
-       game.setItems(items);
+       Item[] items = createItems();
+       game.setItem(items);
        
        Map map= createMap(numberRows, numberColumns, items);
        if (map == null) {

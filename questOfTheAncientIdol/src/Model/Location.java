@@ -14,10 +14,34 @@ import java.util.Objects;
  */
 public class Location implements Serializable{
     
-    public Integer row;
-    public String column;
-    public String visited;
+    public int row;
+    public int column;
+    public boolean visited;
     public SceneType scene;
+
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
 
     public SceneType getScene() {
         return scene;
@@ -28,16 +52,12 @@ public class Location implements Serializable{
     }
 
     @Override
-    public String toString() {
-        return "Location{" + "row=" + row + ", column=" + column + ", visited=" + visited + '}';
-    }
-
-    @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 23 * hash + Objects.hashCode(this.row);
-        hash = 23 * hash + Objects.hashCode(this.column);
-        hash = 23 * hash + Objects.hashCode(this.visited);
+        int hash = 3;
+        hash = 83 * hash + this.row;
+        hash = 83 * hash + this.column;
+        hash = 83 * hash + (this.visited ? 1 : 0);
+        hash = 83 * hash + Objects.hashCode(this.scene);
         return hash;
     }
 
@@ -53,40 +73,20 @@ public class Location implements Serializable{
             return false;
         }
         final Location other = (Location) obj;
-        if (!Objects.equals(this.column, other.column)) {
+        if (this.row != other.row) {
             return false;
         }
-        if (!Objects.equals(this.visited, other.visited)) {
+        if (this.column != other.column) {
             return false;
         }
-        if (!Objects.equals(this.row, other.row)) {
+        if (this.visited != other.visited) {
+            return false;
+        }
+        if (!Objects.equals(this.scene, other.scene)) {
             return false;
         }
         return true;
     }
 
-    public Integer getRow() {
-        return row;
-    }
-
-    public void setRow(Integer row) {
-        this.row = row;
-    }
-
-    public String getColumn() {
-        return column;
-    }
- 
-    public void setColumn(String column) {
-        this.column = column;
-    }
-
-    public String getVisited() {
-        return visited;
-    }
-
-    public void setVisited(String visited) {
-        this.visited = visited;
-    }
- 
+    
 }

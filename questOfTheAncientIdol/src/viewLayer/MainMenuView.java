@@ -11,6 +11,9 @@ package viewLayer;
  */
 public class MainMenuView extends View {
 
+    public MainMenuView() {
+    }
+
     @Override
     public String[] getInputs() {
         // create a new array of Strings called inputs whose length is the number of inputs to be retrieved (1)
