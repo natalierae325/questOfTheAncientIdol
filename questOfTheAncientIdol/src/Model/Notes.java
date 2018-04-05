@@ -40,26 +40,26 @@ public class Notes {
     //Y -
     //Z -
     /**
-     * 
-     *constructors on everything
+     *
      *
      * 
+     * know where to put methods from lesson 10
      * 
      * 
+     * middle column: F,L,R
+     * top edge: F,R
+     * bottom edge: F, L
      * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
+     * scenes
+     * traps/questions/puzzle : 11 
+     *      ~3 questions
+     * empty : 16
+     *      1 question (move function)
+     * items : 1
+     *      2 questions
+     * tresures : 2
+     *      2 questions
+     *
      * 
      * 
      * 
