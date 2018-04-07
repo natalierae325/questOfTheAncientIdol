@@ -20,7 +20,7 @@ public class InventoryList implements Serializable{
     public int hashCode() {
         int hash = 7;
         hash = 43 * hash + Objects.hashCode(this.inventoryType);
-        return hash;
+        return hash;    
     }
 
     @Override

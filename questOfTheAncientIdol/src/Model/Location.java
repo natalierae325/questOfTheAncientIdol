@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 public class Location implements Serializable{
 
-    public Location(Integer row, String column, String visited, SceneType scene) {
+    public Location(Integer row, Integer column, String visited, SceneType scene) {
         this.row = row;
         this.column = column;
         this.visited = visited;
@@ -22,6 +22,7 @@ public class Location implements Serializable{
     }
     
     public int row;
+
     public int column;
     public boolean visited;
     public SceneType scene;
