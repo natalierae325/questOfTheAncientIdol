@@ -53,12 +53,20 @@ public class Notes {
      * scenes
      * traps/questions/puzzle : 11 
      *      ~3 questions
+     *          complex question
+     *          complex question
+     *          move question 
      * empty : 16
      *      1 question (move function)
+     *          move question
      * items : 1
      *      2 questions
+     *          grab question 
+     *          move question
      * tresures : 2
      *      2 questions
+     *          grab question 
+     *          move question
      *
      * 
      * 

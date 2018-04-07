@@ -32,18 +32,6 @@ public class Map implements Serializable{
         this.description = description;
     }
 
-    private Map map;
-    private String numberRows;
-    private String numberColumns;
- >>>>>>> origin/master
-
-    public Map(int numberRows, int numberColumns) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 3;
         hash = 71 * hash + this.numberRows;
         hash = 71 * hash + this.numberColumns;
         hash = 71 * hash + Arrays.deepHashCode(this.locations);
@@ -101,5 +89,17 @@ public class Map implements Serializable{
 
     
 
+    private Map map;
+    private String numberRows;
+    private String numberColumns;
+ >>>>>>> origin/master
+
+    public Map(int numberRows, int numberColumns) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
 }
    
