@@ -10,6 +10,10 @@ import questoftheancientidol.QuestOfTheAncientIdol;
 
 public class GameControl {
 
+    public static Player savePlayer(String playersName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 public GameControl() {
     
 }

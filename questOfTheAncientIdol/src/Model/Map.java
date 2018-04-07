@@ -16,11 +16,14 @@ import java.util.Objects;
 
 public class Map implements Serializable{
 
-<<<<<<< HEAD
-    private int numberRows;
-    private int numberColumns;
-    private Location[][] locations;
-=======
+    private String numberRows;
+    private String numberColumns;
+    private Location[][] location;
+    private String rowCount;
+    private String columnCount;
+    private String currentRown;
+    private String currentColumn;
+    private String description;
     public Map(Map map, String numberRows, String numberColumns, String rowCount, String columnCount, String currentRown, String currentColumn, String description) {
         this.map = map;
         this.numberRows = numberRows;
@@ -35,7 +38,7 @@ public class Map implements Serializable{
     private Map map;
     private String numberRows;
     private String numberColumns;
->>>>>>> origin/master
+
 
     public Map(int numberRows, int numberColumns) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -46,7 +49,7 @@ public class Map implements Serializable{
         int hash = 3;
         hash = 71 * hash + this.numberRows;
         hash = 71 * hash + this.numberColumns;
-        hash = 71 * hash + Arrays.deepHashCode(this.locations);
+        hash = 71 * hash + Arrays.deepHashCode(this.location);
         return hash;
     }
 
