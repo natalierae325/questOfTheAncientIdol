@@ -43,7 +43,7 @@ public static int createNewGame(Player player) {
     }
        
        
-       game.getGame().setMap()
+       game.getGame().setMap();
     
     public static Items[] createItems(){
         Items[] items = new Items[30];

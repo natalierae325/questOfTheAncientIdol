@@ -14,6 +14,7 @@ import java.util.Objects;
 public class SceneType implements Serializable{
       private String description;
       private String mapSymbol;
+      private Question moveQuestion;
     @Override
     public String toString() {
         return "SceneType{" + "description=" + description + ", mapSymbol=" + mapSymbol + '}';

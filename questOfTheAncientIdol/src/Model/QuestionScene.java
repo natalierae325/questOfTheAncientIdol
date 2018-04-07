@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author natal
  */
-public class QuestionScene implements Serializable{
+public class QuestionScene {
   private String answer;
 
     public QuestionScene() {
