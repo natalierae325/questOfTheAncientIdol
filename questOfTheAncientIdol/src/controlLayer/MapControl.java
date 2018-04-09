@@ -51,20 +51,29 @@ public class MapControl {
      
      locations[0][0].setScene(new EmptyScene());
      locations[0][0].getScene().setMapSymbol("<E>");
+     Question eq = new Question();
+     locations[0][0].eq.setQuestion("Do you want to move: "
+             + "/n F - Forward"
+             + "/n R - Right ");
+     locations[0][0].eq.
+     locations[0][0].getScene().setTopMoveQuestion(new topMoveQuestion());
      
      locations[0][1].setScene(new EmptyScene());
-     locations[0][1].getScene().setQuestion(new Question());
-     locations[0][1].getScene().getQuestion.setAnswer("wwww");
+     locations[0][1].getScene().setTopMoveQuestion(new topMoveQuestion());
+     locations[0][1].getScene().getTopMoveQuestion.setTopMoveAnswer("wwww");
              
      locations[0][2].setScene(new TreasureScene());
      locations[0][2].getScene().setQuestion(new Question());
      locations[0][2].getScene().getQuestion.setAnswer("wwww");
      
-     locations[0][3].setScene(new EmptyScene());
+     locations[0][3].setScene(new ItemScene());
+     locations[0][3].getScene().Question(new Question());
+     locations[0][3].getScene().setmoveQuestion(new moveQuestion)
      locations[0][3].getScene().setMapSymbol("<E>");
      
-     locations[0][4].setScene(scene);
-     locations[0][4].
+     locations[0][4].setScene(new EmptyScene());
+     locations[0][4].getScene().setMapSymbol("<E>");
+     
      
      
      
