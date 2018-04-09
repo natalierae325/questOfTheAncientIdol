@@ -20,7 +20,7 @@ public class MapControl {
     }
     
  public static String placesVisited(String currentRow, String currentColumn, String visitedRow, String visitedColumn) {
-        if ( currentRow == visitedRow && visitedColumn == currentColumn) {
+         if ( currentRow == visitedRow && visitedColumn == currentColumn) {
         }
         
         
