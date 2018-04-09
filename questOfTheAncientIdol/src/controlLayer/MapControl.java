@@ -9,6 +9,7 @@ import Model.EmptyScene;
 import Model.Item;
 import Model.Location;
 import Model.Map;
+import Model.Question;
 import Model.QuestionScene;
 import Model.SceneType;
 
@@ -53,7 +54,16 @@ public class MapControl {
      
      locations[0][1].setScene(new EmptyScene());
      locations[0][1].getScene().setQuestion(new Question());
-     locations[0][1].getScene().getQuestion.setAnswer("wwww")
+     locations[0][1].getScene().getQuestion.setAnswer("wwww");
+             
+     locations[0][2].setScene(new TreasureScene());
+     locations[0][2].getScene().setQuestion(new Question());
+     locations[0][2].getScene().getQuestion.setAnswer("wwww");
+     
+     locations[0][3].setScene(new EmptyScene());
+     locations[0][3].getScene().setMapSymbol("<E>");
+     
+     locations[0][4].setScene(scene);
      
      
      
