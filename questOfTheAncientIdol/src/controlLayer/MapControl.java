@@ -22,7 +22,7 @@ public class MapControl {
     public MapControl() {
     }
     
- public static String placesVisited(String currentRow, String currentColumn, String visitedRow, String visitedColumn) {
+ public static String placesVisited(String currentRow, S tring currentColumn, String visitedRow, String visitedColumn) {
          if ( currentRow == visitedRow && visitedColumn == currentColumn) {
         }
         
