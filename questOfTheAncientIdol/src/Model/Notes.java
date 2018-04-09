@@ -63,7 +63,7 @@ public class Notes {
      *      2 questions
      *          grab question 
      *          move question
-     * tresures : 2
+     * treasures : 2
      *      2 questions
      *          grab question 
      *          move question
