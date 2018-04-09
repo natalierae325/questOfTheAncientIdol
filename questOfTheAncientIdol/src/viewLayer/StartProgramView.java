@@ -23,12 +23,21 @@ public class StartProgramView extends View {
     public StartProgramView() {
     }
        String displayMessage = ("\n *** Enter your name ***");
-       @Override
-    public void displayStartProgramView implements() {
+
+    @Override
+    public String[] getInputs() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void ViewInterface() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public void displayStartProgramView implements() { implements() {
         String[] inputs = new String[1];
         boolean endOfView = false;
         do {
-            String value = getInput();
+            String value =  getInput();
             inputs[0] = value;
             if (value.equals("Q")) {
                 endOfView = true;
@@ -38,8 +47,8 @@ public class StartProgramView extends View {
             endOfView = doAction(inputs);
         } while (!endOfView);
     }
-
-    public String getInput() {
+    
+    public void getInput() {
         Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
         String value = null;
@@ -63,6 +72,7 @@ public class StartProgramView extends View {
 
     public boolean doAction(String[] inputValues) {
         String playersName = this.getInput("\nPlease enter your name: ");
+        String[] inputs = null;
         inputs[0] = playersName;
         String playersName = inputValues[0];
         Player player = GameControl.savePlayer(playersName);
@@ -78,7 +88,7 @@ public class StartProgramView extends View {
         return false;
     }
     
-    mainMenuView = MainMenuView.display;
-    mainMenuView.displayMainMenuView();
+     mainMenuView = MainMenuView.display;
+     mainMenuView.displayMainMenuView();
     
 }

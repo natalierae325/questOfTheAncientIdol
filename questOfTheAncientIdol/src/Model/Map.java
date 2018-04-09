@@ -16,22 +16,14 @@ import java.util.Objects;
 
 public class Map implements Serializable{
 
- <<<<<<< HEAD
-    private int numberRows;
-    private int numberColumns;
-    private Location[][] locations;
-  =======
+    public Map(int numberRows, int numberColumns) {
     public Map(Map map, String numberRows, String numberColumns, String rowCount, String columnCount, String currentRown, String currentColumn, String description) {
         this.map = map;
         this.numberRows = numberRows;
         this.numberColumns = numberColumns;
-        this.rowCount = rowCount;
-        this.columnCount = columnCount;
-        this.currentRown = currentRown;
-        this.currentColumn = currentColumn;
-        this.description = description;
     }
 
+  
         hash = 71 * hash + this.numberRows;
         hash = 71 * hash + this.numberColumns;
         hash = 71 * hash + Arrays.deepHashCode(this.locations);
@@ -85,8 +77,28 @@ public class Map implements Serializable{
     public void setNumberColumns(int numberColumns) {
         this.numberColumns = numberColumns;
     }
-   
+       
 
+    public Location[][] getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location[][] location) {
+        this.location = location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    private int numberRows;
+    private int numberColumns;
+    private Location[][] location;
+    private String description;
     
 
     private Map map;
