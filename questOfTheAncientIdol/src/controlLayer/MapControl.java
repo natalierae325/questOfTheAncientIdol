@@ -64,6 +64,7 @@ public class MapControl {
      locations[0][3].getScene().setMapSymbol("<E>");
      
      locations[0][4].setScene(scene);
+     locations[0][4].
      
      
      

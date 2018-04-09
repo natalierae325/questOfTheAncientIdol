@@ -56,7 +56,6 @@ public class InventoryList implements Serializable{
 
         
     }
-    
-    
+      
 
     

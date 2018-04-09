@@ -9,7 +9,8 @@ package Model;
  *
  * @author natal
  */
-public class EmptyScene extends SceneType{
+public class EmptyScene extends SceneType {
+
     private Question moveQuestion;
 
     public Question getMoveQuestion() {
@@ -19,5 +20,4 @@ public class EmptyScene extends SceneType{
     public void setMoveQuestion(Question moveQuestion) {
         this.moveQuestion = moveQuestion;
     }
-    
 }
