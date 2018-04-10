@@ -9,7 +9,7 @@ package viewLayer;
  *
  * @author abbeymj
  */
-public class MoveView {
+public class MoveView extends View{
 
     public MoveView(){
     }
@@ -45,6 +45,16 @@ public class MoveView {
     }
     
     private void exitMenu(){
+        
+    }
+
+    @Override
+    public String[] getInputs() {
+        
+    }
+
+    @Override
+    public boolean doAction(String[] inputs) {
         
     }
     

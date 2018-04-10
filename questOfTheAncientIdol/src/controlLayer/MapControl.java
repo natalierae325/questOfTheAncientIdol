@@ -54,11 +54,13 @@ public class MapControl {
      
      locations[0][0].setScene(new EmptyScene());
      locations[0][0].getScene().setMapSymbol("<E>");
-     Question eq = new Question();
+     Question eq = new Question("Do you want to move: "
+             + "/n F - Forward"
+             + "/n R - Right ","F" || "R" );
      locations[0][0].eq.setQuestion("Do you want to move: "
              + "/n F - Forward"
              + "/n R - Right ");
-     locations[0][0].eq.
+
      locations[0][0].getScene().setTopMoveQuestion(new topMoveQuestion());
      
      locations[0][1].setScene(new EmptyScene());
@@ -75,7 +77,41 @@ public class MapControl {
      locations[0][3].getScene().setMapSymbol("<E>");
      
      locations[0][4].setScene(new EmptyScene());
-     locations[0][4].getScene().setMapSymbol("<E>");
+     locations[0][4].getScene().setMapSymbol("<E>"); 
+     
+     locations[0][5].setScene(new EmptyScene());
+     locations[0][5].getScene().setMoveQuestion(eq);
+     locations[0][5].getScene().setMapSymbol("<E>");
+             
+     locations[0][6].setScene(new EmptyScene());
+     locations[0][6].getScene().setMapSymbol("<E>");
+     locations[0][6].getScene().setMoveQuestion(eq);
+             
+     locations[0][7].setScene(new TrapScene());
+     locations[0][7].getScene().setMoveQuestion(eq);
+     locations[0][7].
+     
+     locations[0][8].setScene(new EmptyScene());
+     locations[0][8].getScene().setMapSymbol("<E>");
+     locations[0][8].getScene().setMoveQuestion(eq);
+     
+     locations[0][9].setScene(new TrapScene());
+     locations[0][9].getScene().Question(new Question());
+     
+     
+     
+     
+     
+     
+     
+     locations[1][7].setScene(new EmptyScene());
+     locations[1][7].getScene().setMoveQuestion(eq);
+     locations[1][7].getScene().setMapSymbol("<E>");
+     
+     locations[1][8].setScene(new TrapScene);
+             
+             
+     
      
      
      
