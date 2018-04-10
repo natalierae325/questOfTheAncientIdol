@@ -5,6 +5,7 @@
  */
 package controlLayer;
 
+import Model.Actor;
 import Model.EmptyScene;
 import Model.Item;
 import Model.Location;
@@ -31,6 +32,36 @@ public class MapControl {
         return ;
  }
  
+ 
+ 
+ 
+  public void displayMap(Map map, Actor a) {
+      Location[][] loc = map.getLocations();
+       System.out.println("Quest Of The Ancient Idol"); 
+       System.out.println("1 2 3 4 5 6 7 8 9 10");
+       for (int i = 0; i < 3; i++){
+           System.out.println("-------------------------------------");
+           System.out.println(i);
+           for (int c = 0; c < 10; c++) {
+               System.out.println("|");
+               Location l = loc[i][c];
+               if ( l.isVisited()){
+                   System.out.println(l.getScene().getMapSymbol());
+               }
+               else {
+                   System.out.println("??");
+               }
+           }
+           System.out.println("|");
+          
+       }
+       System.out.println("----------------------------------------");
+          
+  }
+ 
+ 
+ 
+ 
  public static Map createMap(int numberRows, int numberColumns, Item[] items){
      if (numberRows < 0 || numberColumns < 0) {
          return null;
@@ -49,6 +80,7 @@ public class MapControl {
          }
             
      }
+    
      
      //Top row locations
      
@@ -109,6 +141,7 @@ public class MapControl {
      locations[1][7].getScene().setMapSymbol("<E>");
      
      locations[1][8].setScene(new TrapScene);
+     
              
              
      
@@ -188,4 +221,27 @@ public class MapControl {
              
      return map;
  }
+ 
+ public void moveActor(Actor a, Map map, String direction) {
+         int x = a.getCoordinates().charAt(2);
+         int y = a.getCoordinates().charAt(4);
+         String newC = "";
+     if (direction == "L"){
+         y -= 1;
+     }
+      if (direction == "R") {
+         y += 1;
+      } 
+      if (direction == "F"){
+         x += 1;
+      }
+      else {
+          System.out.println("Invalid input entered, please try again.");
+          return;
+      }
+      newC = "(" + x + "," + y + ")";
+      a.setCoordinates(newC);
+ }
+ 
+ 
 }

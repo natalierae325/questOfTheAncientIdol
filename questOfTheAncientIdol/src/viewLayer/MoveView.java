@@ -5,6 +5,9 @@
  */
 package viewLayer;
 
+import controlLayer.MapControl;
+import questoftheancientidol.QuestOfTheAncientIdol;
+
 /**
  *
  * @author abbeymj
@@ -14,35 +17,9 @@ public class MoveView extends View{
     public MoveView(){
     }
     
-    switch (choice) {
-        case 'F': //move forward one space
-            this.moveForward();
-            break;
-        case 'L': //move left one space
-            this.moveLeft();
-            break;
-        case 'R': //move right one space
-            this.moveRight();
-            break;
-        case "E": //quit
-            this.exitMenu();
-            break;
-        default: 
-            System.out.println("\n*** Invalid selection ** Try again!");
-            break;
-    }
     
-    private void moveForward() {
-        
-    }
     
-    private void moveLeft() {
-        
-    }
     
-    private void moveRight() {
-        
-    }
     
     private void exitMenu(){
         
@@ -55,7 +32,10 @@ public class MoveView extends View{
 
     @Override
     public boolean doAction(String[] inputs) {
-        
+        MapControl mc = new MapControl();
+        QuestOfTheAncientIdol quest = new QuestOfTheAncientIdol();
+        mc.moveActor(quest.getCurrentGame().getPlayer().getActor(), quest.getCurrentGame().getMap(), inputs[0]);
+        return true;
     }
     
 }
