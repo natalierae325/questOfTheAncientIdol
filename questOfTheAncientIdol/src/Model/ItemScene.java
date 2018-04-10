@@ -9,7 +9,7 @@ package Model;
  *
  * @author natal
  */
-public class ItemScene extends SceneType {
+public class ItemScene extends SceneType() {
     private Question grabQuestion;
   
 }

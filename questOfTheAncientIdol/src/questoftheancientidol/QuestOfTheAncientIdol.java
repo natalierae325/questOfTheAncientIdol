@@ -7,6 +7,7 @@ package questoftheancientidol;
 
 import Model.Game;
 import Model.Player;
+import viewLayer.StartProgramView;
 
 
 /**
@@ -23,6 +24,8 @@ public class QuestOfTheAncientIdol {
      */
     public static void main(String[] args) {
         // TODO code application logic here 
+        StartProgramView start = new StartProgramView();
+        start.displayView();
     }
     public static Game currentGame;
     public static Player player;
@@ -42,14 +45,4 @@ public class QuestOfTheAncientIdol {
     public void setCurrentGame(Game currentGame) {
         QuestOfTheAncientIdol.currentGame = currentGame;
     }
-{
-        
-    }
-    
-    public static Player player();
 }
-//Game curentGame
-//Player player
-//getCurrentGame()
-//setCurrentGame(Game game)
-//

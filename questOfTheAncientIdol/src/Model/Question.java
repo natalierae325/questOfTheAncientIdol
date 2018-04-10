@@ -17,6 +17,9 @@ public class Question implements Serializable{
     public String toString() {
         return "Question{" + "question=" + question + ", answer=" + answer + '}';
     }
+
+    public Question() {
+    }
     
 
     public Question(String question, String answer) {

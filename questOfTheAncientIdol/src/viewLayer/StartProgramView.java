@@ -19,76 +19,46 @@ import controlLayer.GameControl;
  * doAction(inputs) WHILE endOfView != true
  */
 public class StartProgramView extends View {
+    
+
+ String displayMessage = "\n *** Enter your name ***";
 
     public StartProgramView() {
     }
-       String displayMessage = ("\n *** Enter your name ***");
-
-    @Override
-    public String[] getInputs() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void ViewInterface() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    public void displayStartProgramView implements() { implements() {
-        String[] inputs = new String[1];
-        boolean endOfView = false;
-        do {
-            String value =  getInput();
-            inputs[0] = value;
-            if (value.equals("Q")) {
-                endOfView = true;
-                continue;
-            }
-
-            endOfView = doAction(inputs);
-        } while (!endOfView);
-    }
-    
-    public void getInput() {
-        Scanner keyboard = new Scanner(System.in);
-        boolean valid = false;
-        String value = null;
-
-        while (!valid) {
-
-            System.out.println("\n" + this.displayMessage);
-            
-            
-            value = keyboard.nextLine();
-            value = value.trim();
-
-            if (value.length() < 1) {
-                System.out.println("\n*** You must enter a value ***");
-                continue;
-            }
-            valid = true;
-        }
-        return value;
-    }
+      
+   
 
     public boolean doAction(String[] inputValues) {
-        String playersName = this.getInput("\nPlease enter your name: ");
-        String[] inputs = null;
-        inputs[0] = playersName;
+        
         String playersName = inputValues[0];
         Player player = GameControl.savePlayer(playersName);
         
         if (player == null) {
-            displayMessage = ("Could not create the player." + "Enter a different name.");
+          System.out.println("Could not create the player." + "Enter a different name.");
           return false;
         }
         
-        System.out.println("\n" + this.displayMessage);
-            displayMessage = ("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
+        
+           System.out.println("Welcome," + playersName + "! Thank you for accepting the challenge of the Quest of the Ancient Idol!");
 
-        return false;
+        return true;
     }
     
-     mainMenuView = MainMenuView.display;
-     mainMenuView.displayMainMenuView();
+
+    @Override
+    public String[] getInputs() {
+       //create a String array of inputs length = number of inputs
+       String[] inputs = new String[1];
+       //print out description of the view - description of game 
+       System.out.println(" Quest of the An    ");
+       //call getInput with the prompt message
+       String value = this.getInput(this.displayMessage);
+       // assign valaue returned from getInput to the first position in the inputs array
+       inputs[0] = value;
+       //return the inputs array
+       return inputs;
+
+                        
+    }
     
 }
