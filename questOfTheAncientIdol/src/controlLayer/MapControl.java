@@ -101,15 +101,7 @@ public class MapControl {
      
      
      
-     
-     
-     
-     locations[1][7].setScene(new EmptyScene());
-     locations[1][7].getScene().setMoveQuestion(eq);
-     locations[1][7].getScene().setMapSymbol("<E>");
-     
-     locations[1][8].setScene(new TrapScene);
-             
+       
              
      
      
@@ -134,7 +126,18 @@ public class MapControl {
      locations[1][3].setScene(new EmptyScene());
      locations[1][3].getScene().setMapSymbol("<E>");
      locations[1][3].getScene().setMoveQuestion(eq);
-             
+        
+// 1,4 1,5 1,6 are for the boulder     
+     
+     locations[1][7].setScene(new EmptyScene());
+     locations[1][7].getScene().setMoveQuestion(eq);
+     locations[1][7].getScene().setMapSymbol("<E>");
+     
+     locations[1][8].setScene(new EmptyScence());
+     locations[1][8].getScene().setMapSymbol("<E>");
+     
+     locations[1][9].
+     locations[1][9].
              
      // Bottom row locations
      
@@ -172,6 +175,8 @@ public class MapControl {
     locations[2][6].getScene().setMapSymbol("<E>");
     locations[2][6].getScene().setMoveQuestion(eq);
              
+    
+     
     
     //water trap
     locations[2][7]
