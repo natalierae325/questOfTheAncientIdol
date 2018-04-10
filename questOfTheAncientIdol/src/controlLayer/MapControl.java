@@ -12,6 +12,7 @@ import Model.Map;
 import Model.Question;
 import Model.QuestionScene;
 import Model.SceneType;
+import Model.TrapScene;
 
 /**
  *
@@ -82,41 +83,59 @@ public class MapControl {
      
      locations[1][0].setScene(new EmptyScene());
      locations[1][0].getScene().setMapSymbol("<E>");
+     locations[1][0].getScene().setMoveQuestion(eq);
              
      locations[1][1].setScene(new EmptyScene());
      locations[1][1].getScene().setMapSymbol("<E>");
+     locations[1][1].getScene().setMoveQuestion(eq);
+             
       
      //sand puzzle
-     locations[1][2]
-     locations[1][2]
+     locations[1][2].setScene(new TrapScene());
+     locations[1][2].getScene().setMapSymbol("Oh no! You walked right into a trap!");
+     locations[1][2].getScene().setMoveQuestion(eq);
              
      locations[1][3].setScene(new EmptyScene());
      locations[1][3].getScene().setMapSymbol("<E>");
+     locations[1][3].getScene().setMoveQuestion(eq);
+             
              
      // Bottom row locations
      
     locations[2][0].setScene(new EmptyScene());
     locations[2][0].getScene().setMapSymbol("<E>");
+    locations[2][0].getScene().setMoveQuestion(eq);
+             
              
     locations[2][1].setScene(new EmptyScene());
     locations[2][1].getScene().setMapSymbol("<E>");
+    locations[2][1].getScene().setMoveQuestion(eq);
+             
     
     //Walls cave in
-    locations[2][2]
-     locations[2][2]
+    locations[2][2].setScene(new TrapScene());
+    locations[2][2].
              
-     locations[2][3].setScene(new EmptyScene());
-     locations[2][3].getScene().setMapSymbol("<E>");
+    locations[2][3].setScene(new EmptyScene());
+    locations[2][3].getScene().setMapSymbol("<E>");
+    locations[2][3].getScene().setMoveQuestion(eq);
              
-     locations[2][4].setScene(new EmptyScene());
-     locations[2][4].getScene().setMapSymbol("<E>");
              
-     locations[2][5].setScene(new EmptyScene());
-     locations[2][5].getScene().setMapSymbol("<E>");
+    locations[2][4].setScene(new EmptyScene());
+    locations[2][4].getScene().setMapSymbol("<E>");
+    locations[2][4].getScene().setMoveQuestion(eq);
+             
+             
+    locations[2][5].setScene(new EmptyScene());
+    locations[2][5].getScene().setMapSymbol("<E>");
+    locations[2][5].getScene().setMoveQuestion(eq);
+             
              
                   
     locations[2][6].setScene(new EmptyScene());
     locations[2][6].getScene().setMapSymbol("<E>");
+    locations[2][6].getScene().setMoveQuestion(eq);
+             
     
     //water trap
     locations[2][7]
@@ -124,9 +143,13 @@ public class MapControl {
             
     locations[2][8].setScene(new EmptyScene());
     locations[2][8].getScene().setMapSymbol("<E>");
+    locations[2][8].getScene().setMoveQuestion(eq);
+             
             
     locations[2][9].setScene(new EmptyScene());
     locations[2][9].getScene().setMapSymbol("<E>");
+    locations[2][9].getScene().setMoveQuestion(eq);
+             
      return map;
  }
 }
