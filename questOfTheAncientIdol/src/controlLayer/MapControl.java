@@ -94,7 +94,7 @@ public class MapControl {
      locations[1][2].setScene(new TrapScene());
      locations[1][2].getScene().setMapSymbol("Oh no! You walked right into a trap!");
      locations[1][2].getScene().setMoveQuestion(eq);
-             
+              
      locations[1][3].setScene(new EmptyScene());
      locations[1][3].getScene().setMapSymbol("<E>");
      locations[1][3].getScene().setMoveQuestion(eq);
