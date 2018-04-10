@@ -49,6 +49,8 @@ public class MapControl {
             
      }
      
+     //Top row locations
+     
      locations[0][0].setScene(new EmptyScene());
      locations[0][0].getScene().setMapSymbol("<E>");
      Question eq = new Question();
@@ -76,7 +78,55 @@ public class MapControl {
      
      
      
+     // Middle row locations
      
+     locations[1][0].setScene(new EmptyScene());
+     locations[1][0].getScene().setMapSymbol("<E>");
+             
+     locations[1][1].setScene(new EmptyScene());
+     locations[1][1].getScene().setMapSymbol("<E>");
+      
+     //sand puzzle
+     locations[1][2]
+     locations[1][2]
+             
+     locations[1][3].setScene(new EmptyScene());
+     locations[1][3].getScene().setMapSymbol("<E>");
+             
+     // Bottom row locations
+     
+    locations[2][0].setScene(new EmptyScene());
+    locations[2][0].getScene().setMapSymbol("<E>");
+             
+    locations[2][1].setScene(new EmptyScene());
+    locations[2][1].getScene().setMapSymbol("<E>");
+    
+    //Walls cave in
+    locations[2][2]
+     locations[2][2]
+             
+     locations[2][3].setScene(new EmptyScene());
+     locations[2][3].getScene().setMapSymbol("<E>");
+             
+     locations[2][4].setScene(new EmptyScene());
+     locations[2][4].getScene().setMapSymbol("<E>");
+             
+     locations[2][5].setScene(new EmptyScene());
+     locations[2][5].getScene().setMapSymbol("<E>");
+             
+                  
+    locations[2][6].setScene(new EmptyScene());
+    locations[2][6].getScene().setMapSymbol("<E>");
+    
+    //water trap
+    locations[2][7]
+    locations[2][7]
+            
+    locations[2][8].setScene(new EmptyScene());
+    locations[2][8].getScene().setMapSymbol("<E>");
+            
+    locations[2][9].setScene(new EmptyScene());
+    locations[2][9].getScene().setMapSymbol("<E>");
      return map;
  }
 }
