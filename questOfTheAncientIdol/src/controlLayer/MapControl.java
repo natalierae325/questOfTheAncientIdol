@@ -64,9 +64,8 @@ public class MapControl {
      locations[0][0].getScene().setTopMoveQuestion(new topMoveQuestion());
      
      locations[0][1].setScene(new EmptyScene());
-     locations[0][1].getScene().setTopMoveQuestion(new topMoveQuestion());
-     locations[0][1].getScene().getTopMoveQuestion.setTopMoveAnswer("wwww");
-             
+     locations[0][1].getScene().setMoveQuestion(eq);
+     
      locations[0][2].setScene(new TreasureScene());
      locations[0][2].getScene().setQuestion(new Question());
      locations[0][2].getScene().getQuestion.setAnswer("wwww");
@@ -88,8 +87,8 @@ public class MapControl {
      locations[0][6].getScene().setMoveQuestion(eq);
              
      locations[0][7].setScene(new TrapScene());
+     locations[0][7].getScene().setMapSymbol("<!>")
      locations[0][7].getScene().setMoveQuestion(eq);
-     locations[0][7].getScene().
      
      locations[0][8].setScene(new EmptyScene());
      locations[0][8].getScene().setMapSymbol("<E>");
@@ -98,14 +97,7 @@ public class MapControl {
      locations[0][9].setScene(new TrapScene());
      locations[0][9].getScene().Question(new Question());
      
-     
-     
-     
-       
-             
-     
-     
-     
+        
      
      // Middle row locations
      
@@ -120,15 +112,28 @@ public class MapControl {
       
      //sand puzzle
      locations[1][2].setScene(new TrapScene());
-     locations[1][2].getScene().setMapSymbol("Oh no! You walked right into a trap!");
+     locations[1][2].getScene().setMapSymbol("<!>");
      locations[1][2].getScene().setMoveQuestion(eq);
               
      locations[1][3].setScene(new EmptyScene());
      locations[1][3].getScene().setMapSymbol("<E>");
      locations[1][3].getScene().setMoveQuestion(eq);
         
-// 1,4 1,5 1,6 are for the boulder     
-     
+// 1,4 1,5 1,6 are for the boulder  
+
+    locations[1][4]
+    locations[1][4]
+    locations[1][4]
+            
+    
+    locations[1][5]
+    locations[1][5]
+    locations[1][5]
+
+    locations[1][6]
+    locations[1][6]
+    locations[1][6]
+            
      locations[1][7].setScene(new EmptyScene());
      locations[1][7].getScene().setMoveQuestion(eq);
      locations[1][7].getScene().setMapSymbol("<E>");
@@ -136,6 +141,7 @@ public class MapControl {
      locations[1][8].setScene(new EmptyScence());
      locations[1][8].getScene().setMapSymbol("<E>");
      
+     //end of game (exit game)
      locations[1][9].
      locations[1][9].
              
@@ -153,7 +159,8 @@ public class MapControl {
     
     //Walls cave in
     locations[2][2].setScene(new TrapScene());
-    locations[2][2].
+    locations[2][2].getScene().setMapSymbol("<!>");
+    locations[2][2].getScene().setMoveQuestion(eq);
              
     locations[2][3].setScene(new EmptyScene());
     locations[2][3].getScene().setMapSymbol("<E>");
@@ -168,24 +175,20 @@ public class MapControl {
     locations[2][5].setScene(new EmptyScene());
     locations[2][5].getScene().setMapSymbol("<E>");
     locations[2][5].getScene().setMoveQuestion(eq);
-             
-             
+    
                   
     locations[2][6].setScene(new EmptyScene());
     locations[2][6].getScene().setMapSymbol("<E>");
     locations[2][6].getScene().setMoveQuestion(eq);
              
-    
-     
-    
     //water trap
-    locations[2][7]
-    locations[2][7]
+    locations[2][7].setScene(new TrapScene());
+    locations[2][7].getScene().setMapSymbol(mapSymbol);
+    locations[2][7].getScene().setMoveQuestion(eq);
             
     locations[2][8].setScene(new EmptyScene());
     locations[2][8].getScene().setMapSymbol("<E>");
-    locations[2][8].getScene().setMoveQuestion(eq);
-             
+    locations[2][8].getScene().setMoveQuestion(eq);         
             
     locations[2][9].setScene(new EmptyScene());
     locations[2][9].getScene().setMapSymbol("<E>");
