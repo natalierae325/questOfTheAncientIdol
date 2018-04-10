@@ -89,7 +89,7 @@ public class MapControl {
              
      locations[0][7].setScene(new TrapScene());
      locations[0][7].getScene().setMoveQuestion(eq);
-     locations[0][7].
+     locations[0][7].getScene().
      
      locations[0][8].setScene(new EmptyScene());
      locations[0][8].getScene().setMapSymbol("<E>");
