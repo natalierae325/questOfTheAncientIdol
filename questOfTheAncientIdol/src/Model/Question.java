@@ -41,6 +41,21 @@ public class Question implements Serializable{
     }
 
     @Override
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
     public int hashCode() {
         int hash = 3;
         hash = 79 * hash + Objects.hashCode(this.question);
