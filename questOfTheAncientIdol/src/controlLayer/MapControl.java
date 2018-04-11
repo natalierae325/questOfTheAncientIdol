@@ -11,7 +11,6 @@ import Model.Item;
 import Model.Location;
 import Model.Map;
 import Model.Question;
-import Model.QuestionScene;
 import Model.SceneType;
 import Model.TrapScene;
 
@@ -309,7 +308,6 @@ public class MapControl {
      
       // 1,4 1,5 1,6 are for the boulder     
      
-=======
      locations[1][3].getScene().setMoveQuestion(eq);
         
 // 1,4 1,5 1,6 are for the boulder  
