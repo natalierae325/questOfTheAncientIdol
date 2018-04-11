@@ -100,6 +100,134 @@ public class MapControl {
       }
       newC = "(" + x + "," + y + ")";
       a.setCoordinates(newC);
+        
+     locations[0][4].getScene().setMapSymbol("<E>"); 
+     
+     locations[0][5].setScene(new EmptyScene());
+     locations[0][5].getScene().setMoveQuestion(eq);
+     locations[0][5].getScene().setMapSymbol("<E>");
+             
+     locations[0][6].setScene(new EmptyScene());
+     locations[0][6].getScene().setMapSymbol("<E>");
+     locations[0][6].getScene().setMoveQuestion(eq);
+             
+     locations[0][7].setScene(new TrapScene());
+     locations[0][7].getScene().setMoveQuestion(eq);
+     locations[0][7].getScene().
+     
+     locations[0][8].setScene(new EmptyScene());
+     locations[0][8].getScene().setMapSymbol("<E>");
+     locations[0][8].getScene().setMoveQuestion(eq);
+     
+     locations[0][9].setScene(new TrapScene());
+     locations[0][9].getScene().Question(new Question());
+     
+     
+        //middle rows  
+ 
+ 
+ 
+ 
+  public void displayMap(Map map, Actor a) {
+      Location[][] loc = map.getLocations();
+       System.out.println("Quest Of The Ancient Idol"); 
+       System.out.println("1 2 3 4 5 6 7 8 9 10");
+       for (int i = 0; i < 3; i++){
+           System.out.println("-------------------------------------");
+           System.out.println(i);
+           for (int c = 0; c < 10; c++) {
+               System.out.println("|");
+               Location l = loc[i][c];
+               if ( l.isVisited()){
+                   System.out.println(l.getScene().getMapSymbol());
+               }
+               else {
+                   System.out.println("??");
+               }
+           }
+           System.out.println("|");
+          
+       }
+       System.out.println("----------------------------------------");
+          
+  }
+ 
+ 
+ 
+ 
+ public static Map createMap(int numberRows, int numberColumns, Item[] items){
+     if (numberRows < 0 || numberColumns < 0) {
+         return null;
+     }
+     if ( items == null || items.length < 1 ){
+     return null;
+    }
+     Map map = new Map(numberRows, numberColumns);
+     Location[][] locations= new Location[numberRows][numberColumns];
+     map.setLocation(locations);
+     
+     for (int i=0; i < locations.length; i++){
+         for ( int k=0; k < locations[0].length; k++){
+             SceneType scene = new SceneType();
+             locations[i][k].setScene(scene);
+         }
+            
+     }
+    
+      public static void moveActor(Actor a, Map map, String direction) {
+         int x = a.getCoordinates().charAt(2);
+         int y = a.getCoordinates().charAt(4);
+         String newC = "";
+     if (direction == "L"){
+         y -= 1;
+     }
+      if (direction == "R") {
+         y += 1;
+      } 
+      if (direction == "F"){
+         x += 1;
+      }
+      else {
+          System.out.println("Invalid input entered, please try again.");
+          return;
+      }
+      newC = "(" + x + "," + y + ")";
+      a.setCoordinates(newC);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  }
  
      //Top row locations
@@ -152,6 +280,15 @@ public class MapControl {
      
      
         //middle rows  
+       
+       
+             
+     
+     
+     
+     
+     // Middle row locations
+     
      locations[1][0].setScene(new EmptyScene());
      locations[1][0].getScene().setMapSymbol("<E>");
      locations[1][0].getScene().setMoveQuestion(eq);
@@ -163,7 +300,7 @@ public class MapControl {
       
      //sand puzzle
      locations[1][2].setScene(new TrapScene());
-     locations[1][2].getScene().setMapSymbol("Oh no! You walked right into a trap!");
+     locations[1][2].getScene().setMapSymbol("<!>");
      locations[1][2].getScene().setMoveQuestion(eq);
               
      locations[1][3].setScene(new EmptyScene());
@@ -172,73 +309,21 @@ public class MapControl {
      
       // 1,4 1,5 1,6 are for the boulder     
      
-     locations[1][7].setScene(new EmptyScene());
-     locations[1][7].getScene().setMoveQuestion(eq);
-     locations[1][7].getScene().setMapSymbol("<E>");
-     
-     locations[1][8].setScene(new EmptyScence());
-     locations[1][8].getScene().setMapSymbol("<E>");
-     locations[1][8].setScene(new TrapScene);
-     
-     locations[1][9].
-     locations[1][9].       
+=======
+     locations[1][3].getScene().setMoveQuestion(eq);
+        
+// 1,4 1,5 1,6 are for the boulder  
 
-             
-     // Bottom row locations
-     
-    locations[2][0].setScene(new EmptyScene());
-    locations[2][0].getScene().setMapSymbol("<E>");
-    locations[2][0].getScene().setMoveQuestion(eq);
-             
-             
-    locations[2][1].setScene(new EmptyScene());
-    locations[2][1].getScene().setMapSymbol("<E>");
-    locations[2][1].getScene().setMoveQuestion(eq);
-             
-    
-    //Walls cave in
-    locations[2][2].setScene(new TrapScene());
-    locations[2][2].
-             
-    locations[2][3].setScene(new EmptyScene());
-    locations[2][3].getScene().setMapSymbol("<E>");
-    locations[2][3].getScene().setMoveQuestion(eq);
-             
-             
-    locations[2][4].setScene(new EmptyScene());
-    locations[2][4].getScene().setMapSymbol("<E>");
-    locations[2][4].getScene().setMoveQuestion(eq);
-             
-             
-    locations[2][5].setScene(new EmptyScene());
-    locations[2][5].getScene().setMapSymbol("<E>");
-    locations[2][5].getScene().setMoveQuestion(eq);
-             
-             
-                  
-    locations[2][6].setScene(new EmptyScene());
-    locations[2][6].getScene().setMapSymbol("<E>");
-    locations[2][6].getScene().setMoveQuestion(eq);
-             
-    
-     
-    
-    //water trap
-    locations[2][7]
-    locations[2][7]
+    locations[1][4].setScene(new TrapScene());
+    locations[1][4]
+    locations[1][4]
             
-    locations[2][8].setScene(new EmptyScene());
-    locations[2][8].getScene().setMapSymbol("<E>");
-    locations[2][8].getScene().setMoveQuestion(eq);
-             
-            
-    locations[2][9].setScene(new EmptyScene());
-    locations[2][9].getScene().setMapSymbol("<E>");
-    locations[2][9].getScene().setMoveQuestion(eq);
-             
-     return map;
- }
- 
+    
+    locations[1][5].setScene(new TrapScene());
+    locations[1][5]
+    locations[1][5]
 
- 
-}
+    locations[1][6]
+    locations[1][6]
+    locations[1][6]
+            
