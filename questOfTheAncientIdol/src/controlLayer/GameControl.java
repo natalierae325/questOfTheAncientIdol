@@ -3,6 +3,7 @@ package controlLayer;
 import Model.Actor;
 import Model.Game;
 import Model.Item;
+import Model.Items;
 import Model.Map;
 import Model.Player;
 import questoftheancientidol.QuestOfTheAncientIdol;
@@ -34,7 +35,7 @@ public static int createNewGame(Player player) {
        game.setActors(actors);
        game.getPlayer().setActor(actors[0]);
        
-       Item[] items = createItems();
+       Items[] items = createItems();
        game.setItem(items);
        
        Map map= createMap(numberRows, numberColumns, items);

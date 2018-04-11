@@ -193,40 +193,6 @@ public class MapControl {
       }
       newC = "(" + x + "," + y + ")";
       a.setCoordinates(newC);
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  }
  
@@ -309,7 +275,7 @@ public class MapControl {
      
       // 1,4 1,5 1,6 are for the boulder     
      
-=======
+
      locations[1][3].getScene().setMoveQuestion(eq);
         
 // 1,4 1,5 1,6 are for the boulder  
@@ -383,4 +349,4 @@ public class MapControl {
     locations[2][9].getScene().setMapSymbol("E");
     locations[2][9].getScene().setMoveQuestion(eq);
     
-    
+}
