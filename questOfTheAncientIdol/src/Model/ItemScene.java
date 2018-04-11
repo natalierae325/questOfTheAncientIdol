@@ -9,7 +9,22 @@ package Model;
  *
  * @author natal
  */
-public class ItemScene extends SceneType() {
+public class ItemScene extends SceneType {
     private Question grabQuestion;
+
+  
+
+    public ItemScene(Question grabQuestion, String description, String mapSymbol) {
+        super(description, mapSymbol);
+        this.grabQuestion = grabQuestion;
+    }
+
+    public Question getGrabQuestion() {
+        return grabQuestion;
+    }
+
+    public void setGrabQuestion(Question grabQuestion) {
+        this.grabQuestion = grabQuestion;
+    }
   
 }

@@ -16,6 +16,9 @@ public class SceneType implements Serializable{
       private String mapSymbol;
       private Question moveQuestion;
 
+    public SceneType() {
+    }
+
     public SceneType(Question moveQuestion) {
         this.moveQuestion = moveQuestion;
     }

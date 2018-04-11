@@ -67,6 +67,7 @@ public class Map implements Serializable{
     @Override
     public int hashCode() {
         int hash = 3;
+        return 0;
 }
 }
    

@@ -18,6 +18,8 @@ import java.io.Serializable;
  */
 public class Player implements Serializable{
 
+    private String playersName;
+
     public Player(double bestScore, Actor actor) {
         this.bestScore = bestScore;
         this.actor = actor;

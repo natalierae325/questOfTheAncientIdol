@@ -13,7 +13,7 @@ import java.util.Objects;
  */
 public class Game implements Serializable{
 
-    public Game(String gameCompletionStatus, Player player, Actor[] actors, Items[] items, Map[] map, Game[] game) {
+    public Game(String gameCompletionStatus, Player player, Actor[] actors, Item[] items, Map map, Game[] game) {
         this.gameCompletionStatus = gameCompletionStatus;
         this.player = player;
         this.actors = actors;
@@ -44,7 +44,7 @@ public class Game implements Serializable{
         this.map = map;
     }
 
-    public Items[] getItem() {
+    public Item[] getItem() {
         return items;
     }
 

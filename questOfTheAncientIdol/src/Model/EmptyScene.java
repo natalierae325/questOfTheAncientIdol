@@ -13,6 +13,10 @@ public class EmptyScene extends SceneType {
 
     private Question moveQuestion;
 
+    public EmptyScene(Question moveQuestion) {
+        super(moveQuestion);
+    }
+
     public Question getMoveQuestion() {
         return moveQuestion;
     }

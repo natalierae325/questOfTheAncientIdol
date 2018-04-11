@@ -50,7 +50,9 @@ public class StartProgramView extends View {
        //create a String array of inputs length = number of inputs
        String[] inputs = new String[1];
        //print out description of the view - description of game 
-       System.out.println(" Quest of the An    ");
+       System.out.println(" Quest of the Ancient Idol is a mission to replace the lost idol back to its pedestal at the end of a grid of rooms."
+               + "\n These rooms will have various challenges as well as treasures and tools that you can pick up. Be prepared to solve puzzles"
+               + "\n in order to make it to the pedestal! Good luck on your journey!");
        //call getInput with the prompt message
        String value = this.getInput(this.displayMessage);
        // assign valaue returned from getInput to the first position in the inputs array
