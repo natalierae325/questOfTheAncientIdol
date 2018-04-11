@@ -18,9 +18,6 @@ public class MoveView extends View{
     }
     
     
-    
-    
-    
     private void exitMenu(){
         
     }
