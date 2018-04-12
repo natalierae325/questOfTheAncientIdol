@@ -28,7 +28,7 @@ public class MapControl {
         }
         
         
-        return placesVisited;
+        return;
  }
  
  
@@ -274,7 +274,6 @@ return;
      
       // 1,4 1,5 1,6 are for the boulder     
      
-
      locations[1][3].getScene().setMoveQuestion(eq);
         
 // 1,4 1,5 1,6 are for the boulder  

@@ -12,7 +12,7 @@ import questoftheancientidol.QuestOfTheAncientIdol;
 public class GameControl {
 
     public static Player savePlayer(String playersName) {
-       
+       return playersName;
     }
 
 public GameControl() {
