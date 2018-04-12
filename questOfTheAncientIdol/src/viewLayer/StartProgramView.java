@@ -32,7 +32,9 @@ public class StartProgramView extends View {
     public boolean doAction(String[] inputValues) {
         
         String playersName = inputValues[0];
-        Player player = GameControl.savePlayer(playersName);
+        Player player;
+     player = GameControl.savePlayer(playersName);
+     
         
         if (player == null) {
           System.out.println("Could not create the player." + "Enter a different name.");
