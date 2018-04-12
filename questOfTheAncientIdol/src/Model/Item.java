@@ -13,25 +13,55 @@ import java.util.Objects;
  * @author abbeymj
  */
 public class Item implements Serializable{
+    
+    private String name;
+    private String description;
+    private boolean haveIt;
 
-    public Item(String Knife, String Gun, String Rope, String Idol, String Rubies, String Gold) {
-        this.Knife = Knife;
-        this.Gun = Gun;
-        this.Rope = Rope;
-        this.Idol = Idol;
-        this.Rubies = Rubies;
-        this.Gold = Gold;
+    public Item() {
+    }
+
+    public Item(String name, String description, boolean haveIt) {
+        this.name = name;
+        this.description = description;
+        this.haveIt = haveIt;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isHaveIt() {
+        return haveIt;
+    }
+
+    public void setHaveIt(boolean haveIt) {
+        this.haveIt = haveIt;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" + "name=" + name + ", description=" + description + ", haveIt=" + haveIt + '}';
     }
 
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 23 * hash + Objects.hashCode(this.Knife);
-        hash = 23 * hash + Objects.hashCode(this.Gun);
-        hash = 23 * hash + Objects.hashCode(this.Rope);
-        hash = 23 * hash + Objects.hashCode(this.Idol);
-        hash = 23 * hash + Objects.hashCode(this.Rubies);
-        hash = 23 * hash + Objects.hashCode(this.Gold);
+        hash = 79 * hash + Objects.hashCode(this.name);
+        hash = 79 * hash + Objects.hashCode(this.description);
+        hash = 79 * hash + (this.haveIt ? 1 : 0);
         return hash;
     }
 
@@ -47,80 +77,17 @@ public class Item implements Serializable{
             return false;
         }
         final Item other = (Item) obj;
-        if (!Objects.equals(this.Knife, other.Knife)) {
+        if (this.haveIt != other.haveIt) {
             return false;
         }
-        if (!Objects.equals(this.Gun, other.Gun)) {
+        if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        if (!Objects.equals(this.Rope, other.Rope)) {
-            return false;
-        }
-        if (!Objects.equals(this.Idol, other.Idol)) {
-            return false;
-        }
-        if (!Objects.equals(this.Rubies, other.Rubies)) {
-            return false;
-        }
-        if (!Objects.equals(this.Gold, other.Gold)) {
+        if (!Objects.equals(this.description, other.description)) {
             return false;
         }
         return true;
     }
     
-    private String Knife;
-    private String Gun;
-    private String Rope;
-    private String Idol;
-    private String Rubies;
-    private String Gold;
-
-    public String getKnife() {
-        return Knife;
-    }
-
-    public void setKnife(String Knife) {
-        this.Knife = Knife;
-    }
-
-    public String getGun() {
-        return Gun;
-    }
-
-    public void setGun(String Gun) {
-        this.Gun = Gun;
-    }
-
-    public String getRope() {
-        return Rope;
-    }
-
-    public void setRope(String Rope) {
-        this.Rope = Rope;
-    }
-
-    public String getIdol() {
-        return Idol;
-    }
-
-    public void setIdol(String Idol) {
-        this.Idol = Idol;
-    }
-
-    public String getRubies() {
-        return Rubies;
-    }
-
-    public void setRubies(String Rubies) {
-        this.Rubies = Rubies;
-    }
-
-    public String getGold() {
-        return Gold;
-    }
-
-    public void setGold(String Gold) {
-        this.Gold = Gold;
-    }
     
 }

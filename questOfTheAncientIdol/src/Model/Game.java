@@ -13,28 +13,22 @@ import java.util.Objects;
  */
 public class Game implements Serializable{
 
-    public Game(String gameCompletionStatus, Player player, Actor[] actors, Item[] items, Map map, Game[] game) {
+    public Game(String gameCompletionStatus, Player player, Actor[] actors, Item[] items, Map map) {
         this.gameCompletionStatus = gameCompletionStatus;
         this.player = player;
         this.actors = actors;
         this.items = items;
         this.map = map;
-        this.game = game;
+  
     }
     private String gameCompletionStatus;
     private Player player;
     private Actor[] actors;
     private Item[] items;
     private Map map;
-    private Game[] game;
+ 
 
-    public Game[] getGame() {
-        return game;
-    }
-
-    public void setGame(Game[] game) {
-        this.game = game;
-    }
+    
 
     public Map getMap() {
         return map;
