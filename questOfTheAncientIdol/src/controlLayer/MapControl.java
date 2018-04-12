@@ -11,7 +11,6 @@ import Model.Item;
 import Model.Location;
 import Model.Map;
 import Model.Question;
-import Model.QuestionScene;
 import Model.SceneType;
 import Model.TrapScene;
 
@@ -24,12 +23,12 @@ public class MapControl {
     public MapControl() {
     }
     
- public static String placesVisited(String currentRow, S tring currentColumn, String visitedRow, String visitedColumn) {
-         if ( currentRow == visitedRow && visitedColumn == currentColumn) {
+ public static String placesVisited(String currentRow, String currentColumn, String visitedRow, String visitedColumn) {
+         if ((currentRow == visitedRow) && (visitedColumn == currentColumn)) {
         }
         
         
-        return;
+        return placesVisited;
  }
  
  
@@ -193,7 +192,7 @@ public class MapControl {
       }
       newC = "(" + x + "," + y + ")";
       a.setCoordinates(newC);
-
+return;
  }
  
      //Top row locations
@@ -349,4 +348,4 @@ public class MapControl {
     locations[2][9].getScene().setMapSymbol("E");
     locations[2][9].getScene().setMoveQuestion(eq);
     
-}
+    

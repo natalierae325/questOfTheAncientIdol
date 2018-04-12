@@ -12,7 +12,7 @@ import questoftheancientidol.QuestOfTheAncientIdol;
 public class GameControl {
 
     public static Player savePlayer(String playersName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
 public GameControl() {
@@ -38,7 +38,7 @@ public static int createNewGame(Player player) {
        Items[] items = createItems();
        game.setItem(items);
        
-       Map map= createMap(numberRows, numberColumns, items);
+       Map map= createMap(int numberRows, numberColumns, items);
        if (map == null) {
            return -1;
     }

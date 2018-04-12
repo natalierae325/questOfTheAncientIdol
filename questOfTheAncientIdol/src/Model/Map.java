@@ -69,5 +69,9 @@ public class Map implements Serializable{
         int hash = 3;
         return 0;
 }
+
+    public void setLocation(Location[][] locations) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
    

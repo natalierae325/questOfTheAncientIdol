@@ -112,6 +112,10 @@ public class Game implements Serializable{
         return "Game{" + "gameCompletionStatus=" + gameCompletionStatus + '}';
     }
 
+    public void setItem(Items[] items) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
     
     
