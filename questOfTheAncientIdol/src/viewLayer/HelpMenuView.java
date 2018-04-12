@@ -113,6 +113,10 @@ public class HelpMenuView extends View {
                      // System.out.println("*** At any point in time while you are playing the game and want to quit, PRESS Q. ***")
 
     }
+
+    void displayHelpMenuView() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
 

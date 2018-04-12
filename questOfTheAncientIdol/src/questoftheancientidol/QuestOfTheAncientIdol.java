@@ -26,6 +26,40 @@ public class QuestOfTheAncientIdol {
         // TODO code application logic here 
         StartProgramView start = new StartProgramView();
         start.displayView();
+        
+        private static PrintWriter outFile = null;
+        private static BufferedReader inFile = null;
+
+    public static PrintWriter getOutFile() {
+        return outFile;
+    }
+
+    public static void setOutFile(PrintWriter outFile) {
+        QuestOfTheAncientIdol.outFile = outFile;
+    }
+
+    public static BufferedReader getInFile() {
+        return inFile;
+    }
+
+    public static void setInFile(BufferedReader inFile) {
+        QuestOfTheAncientIdol.inFile = inFile;
+    }
+    
+    
+    try{
+    
+        QuestOfTheAncientIdol.inFile=
+                new BufferedReader(new InputStreamReader(System.in));
+
+        QuestOfTheAncientIdol.outFile = new PrintWriter(System.out, true);
+        
+        StartProgramView startProgramView = new StartProgramView();
+        StartProgramView.display();
+    }
+    
+    
+    
     }
     public static Game currentGame;
     public static Player player;
