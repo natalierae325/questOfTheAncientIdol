@@ -12,7 +12,9 @@ import questoftheancientidol.QuestOfTheAncientIdol;
 public class GameControl {
 
     public static Player savePlayer(String playersName) {
-       return playersName;
+        //save player 
+    
+       return null;
     }
 
 public GameControl() {
@@ -22,9 +24,9 @@ public GameControl() {
     
 
 public static int createNewGame(Player player) {
-        if (player == null)
+        if (player == null){
             return -1;
-        
+        }
         Game game = new Game(); 
         game.setPlayer(player);
         
@@ -35,19 +37,22 @@ public static int createNewGame(Player player) {
        game.setActors(actors);
        game.getPlayer().setActor(actors[0]);
        
-       Items[] items = createItems();
+       Item[] items = createItems();
        game.setItem(items);
        
-       Map map= createMap(int numberRows, numberColumns, items);
+       Map map = MapControl.createMap(3, 10, items);
        if (map == null) {
            return -1;
+       }
+       game.setMap(map);
+        return 0;
     }
        
-       
-       game.getGame().setMap();
+  
+      
     
-    public static Items[] createItems(){
-        Items[] items = new Items[30];
+    public static Item[] createItems(){
+        Item[] items = new Item[30];
         return items;
     }
     
