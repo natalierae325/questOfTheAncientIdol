@@ -60,6 +60,7 @@ public class QuestOfTheAncientIdol {
     
     
     
+    
     }
     public static Game currentGame;
     public static Player player;
