@@ -56,7 +56,10 @@ public class QuestOfTheAncientIdol {
         
         StartProgramView startProgramView = new StartProgramView();
         StartProgramView.display();
-    }
+        
+    } catch (Throwable e) {
+            System.out.println("")
+}
     
     
     
