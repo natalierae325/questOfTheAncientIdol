@@ -26,6 +26,7 @@ public class HelpMenuView extends View {
             System.out.println("***Help Menu***"
 +                   "\n Press P for the purpose of the game"
 +                   "\n Press I for information about the inventory/items inside the game"
+                    "\n Press B for information about the number of items in the backpack"
 +                   "\n Press T for information on how to travel in the board"
 +                   "\n Press S to learn how to save a game"
 +                   "\n Press M to go to the main menu"
@@ -48,6 +49,9 @@ public class HelpMenuView extends View {
                 break;
             case "I": //inventory/items throught game
                 this.inventoryItems();
+                break;
+            case "B": //view number of items in the backpack
+                this.backpackInventory();
                 break;
             case "T": //traveling in the board (how to play)
                 this.travelInformation();
@@ -115,6 +119,10 @@ public class HelpMenuView extends View {
     }
 
     void displayHelpMenuView() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void backpackInventory() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

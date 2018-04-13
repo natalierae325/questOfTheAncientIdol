@@ -14,4 +14,6 @@ public class InventoryControl {
     public InventoryControl() {
     }
     
+    
+    
 }

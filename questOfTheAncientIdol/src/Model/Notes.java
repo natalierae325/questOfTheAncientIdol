@@ -14,7 +14,7 @@ public class Notes {
 
     // MASTER KEY OF PUSH BUTTON COMMANDS
     //A -
-    //B -
+    //B - VIEW NUMBER OF ITEMS IN THE BACKPACK (HelpMenu)
     //C - 
     //D -
     //E - EXIT MENU (help, main, move,)
