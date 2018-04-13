@@ -58,10 +58,16 @@ public class QuestOfTheAncientIdol {
         StartProgramView.display();
         
     } catch (Throwable e) {
-            System.out.println("")
-}
+            System.out.println("Exception: " + e.toString()+
+                                "\nCause: " + e.getCause()+
+                                "\nMessage: " + e.getMessage());
+            e.printStackTrace();
+    }
     
-    
+    finally {
+        QuestOfTheAncientIdol.inFile.close();
+        QuestOfTheAncientIdol.outFile.close();
+    }
     
     
     }
