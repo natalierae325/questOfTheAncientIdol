@@ -123,7 +123,17 @@ public class HelpMenuView extends View {
     }
 
     private void backpackInventory() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Find the sum of a list
+    //total (list): number
+    //BEGIN
+    //total = 0
+    //FOR index = 0 TO list.length -1
+    //total = total + list[index]
+    //ENDFOR
+    //RETURN total
+    //END
+    
+       
     }
     
 }
