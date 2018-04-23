@@ -133,7 +133,9 @@ public class HelpMenuView extends View {
     //RETURN total
     //END
     
-       
+       total Itemp[] 
+               total = 0;
+               for 
     }
     
 }
